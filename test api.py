@@ -10,6 +10,4 @@ detail=api.last_checkpoint.get(slug, number, fields=['title', 'created_at','cust
 print(detail)
 id=detail['id']
 tracking_number=detail['tracking_number']
-
-
 print(id)
