@@ -1,9 +1,3 @@
-'''
-import aftership
-api = aftership.APIv4('95ce5ddb-72f6-4e0c-9114-a185374ec85d')
-couriers = api.couriers.all.get()
-print(couriers)
-'''
 import aftership
 api = aftership.APIv4('95ce5ddb-72f6-4e0c-9114-a185374ec85d')
 couriers = api.couriers.all.get()
@@ -16,6 +10,10 @@ detail=api.last_checkpoint.get(slug, number, fields=['title', 'created_at','cust
 print(detail)
 id=detail['id']
 tracking_number=detail['tracking_number']
+<<<<<<< HEAD
 
 
 print(id)
+=======
+print(id)
+>>>>>>> 0fc988d5dff5ae7a836162baee8b0de8ecd76667
