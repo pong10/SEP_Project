@@ -8,9 +8,8 @@ def generate(countrycode = '--'):
     return code
 
 #just enter country code
-'''
+
 if __name__ == "__main__":
     a = "TH"
     print(generate(a))
     
-'''    
