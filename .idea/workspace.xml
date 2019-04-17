@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa5da6fc-a8b5-4d74-b6d5-ee2956766dbd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/sign.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/sign.py" afterDir="false" />
-    </list>
+    <list default="true" id="aa5da6fc-a8b5-4d74-b6d5-ee2956766dbd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +195,7 @@
       <workItem from="1554273273320" duration="2328000" />
       <workItem from="1554276711622" duration="1324000" />
       <workItem from="1554973759106" duration="15000" />
-      <workItem from="1555485456947" duration="2114000" />
+      <workItem from="1555485456947" duration="2367000" />
     </task>
     <task id="LOCAL-00001" summary="ไอนิ้น อย่าขี้เกลียดทำงาน ด้วย">
       <created>1554276766427</created>
@@ -211,12 +208,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5781000" />
+    <option name="totallyTimeSpent" value="6034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="739" y="13" width="1400" height="780" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.28880596" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28880596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
