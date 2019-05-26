@@ -1,0 +1,106 @@
+Index: venv/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectFrameBounds\" extendedState=\"6\">\r\n    <option name=\"x\" value=\"221\" />\r\n    <option name=\"y\" value=\"120\" />\r\n    <option name=\"width\" value=\"1750\" />\r\n    <option name=\"height\" value=\"975\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"nodejs_interpreter_path.stuck_in_default_project\" value=\"undefined stuck path\" />\r\n    <property name=\"nodejs_npm_path_reset_for_default_project\" value=\"true\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/.idea/workspace.xml	(date 1558854802000)
++++ venv/.idea/workspace.xml	(date 1558859215634)
+@@ -1,15 +1,91 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectFrameBounds" extendedState="6">
+-    <option name="x" value="221" />
+-    <option name="y" value="120" />
++  <component name="ChangeListManager">
++    <list default="true" id="39c6259d-2ea9-4396-a1d2-cd8d75581f19" name="Default Changelist" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
++    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
++  </component>
++  <component name="ProjectFrameBounds">
++    <option name="x" value="180" />
+     <option name="width" value="1750" />
+     <option name="height" value="975" />
+   </component>
++  <component name="ProjectView">
++    <navigator proportions="" version="1">
++      <foldersAlwaysOnTop value="true" />
++    </navigator>
++    <panes />
++  </component>
+   <component name="PropertiesComponent">
+     <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+   </component>
++  <component name="RunDashboard">
++    <option name="ruleStates">
++      <list>
++        <RuleState>
++          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
++        </RuleState>
++        <RuleState>
++          <option name="name" value="StatusDashboardGroupingRule" />
++        </RuleState>
++      </list>
++    </option>
++  </component>
++  <component name="SvnConfiguration">
++    <configuration />
++  </component>
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="39c6259d-2ea9-4396-a1d2-cd8d75581f19" name="Default Changelist" comment="" />
++      <created>1558859193986</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1558859193986</updated>
++      <workItem from="1558859196320" duration="20000" />
++    </task>
++    <servers />
++  </component>
++  <component name="TimeTrackingManager">
++    <option name="totallyTimeSpent" value="20000" />
++  </component>
++  <component name="ToolWindowManager">
++    <frame x="144" y="0" width="1400" height="780" extended-state="0" />
++    <layout>
++      <window_info id="Favorites" side_tool="true" />
++      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
++      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
++      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
++      <window_info anchor="bottom" id="Database Changes" />
++      <window_info anchor="bottom" id="Version Control" />
++      <window_info anchor="bottom" id="Python Console" />
++      <window_info anchor="bottom" id="Terminal" />
++      <window_info anchor="bottom" id="Event Log" side_tool="true" />
++      <window_info anchor="bottom" id="Message" order="0" />
++      <window_info anchor="bottom" id="Find" order="1" />
++      <window_info anchor="bottom" id="Run" order="2" />
++      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
++      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
++      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
++      <window_info anchor="bottom" id="TODO" order="6" />
++      <window_info anchor="right" id="SciView" />
++      <window_info anchor="right" id="Database" />
++      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
++      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
++      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
++    </layout>
++  </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="1" />
++  </component>
+ </project>
+\ No newline at end of file
