@@ -8,8 +8,8 @@ class SignUp():
         port="3306"
     )
     mycursor = mydb.cursor()
-    user = ''
-    password = ''
+    #user = ''
+    #password = ''
 
     def __init__(self, user, password):
         self.user = user
@@ -37,7 +37,7 @@ class SignUp():
 
         for x in myresult:
             print(x)
-a=SignUp('manyou','123456')
+a=SignUp('Pong','987654')
 a.signUp()
 a.print()
 
