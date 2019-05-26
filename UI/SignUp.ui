@@ -16,7 +16,7 @@
   <widget class="QLabel" name="bg">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>-10</x>
      <y>0</y>
      <width>811</width>
      <height>601</height>
@@ -32,9 +32,9 @@
   <widget class="QLabel" name="text">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>60</y>
-     <width>191</width>
+     <x>230</x>
+     <y>40</y>
+     <width>371</width>
      <height>71</height>
     </rect>
    </property>
@@ -103,141 +103,11 @@
     <string notr="true">buttonGroup</string>
    </attribute>
   </widget>
-  <widget class="QPlainTextEdit" name="firstname">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>160</y>
-     <width>121</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <weight>50</weight>
-     <italic>true</italic>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPlainTextEdit{color:grey;}
-</string>
-   </property>
-   <property name="plainText">
-    <string>        firstname
-</string>
-   </property>
-  </widget>
-  <widget class="QPlainTextEdit" name="lastname">
-   <property name="geometry">
-    <rect>
-     <x>360</x>
-     <y>160</y>
-     <width>181</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <weight>50</weight>
-     <italic>true</italic>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPlainTextEdit{color:grey;}
-</string>
-   </property>
-   <property name="plainText">
-    <string>        lastname
-</string>
-   </property>
-  </widget>
-  <widget class="QPlainTextEdit" name="phone_number">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>300</y>
-     <width>151</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <weight>50</weight>
-     <italic>true</italic>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPlainTextEdit{color:grey;}
-</string>
-   </property>
-   <property name="plainText">
-    <string>        phone number
-</string>
-   </property>
-  </widget>
-  <widget class="QPlainTextEdit" name="email">
-   <property name="geometry">
-    <rect>
-     <x>420</x>
-     <y>300</y>
-     <width>151</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <weight>50</weight>
-     <italic>true</italic>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPlainTextEdit{color:grey;}
-</string>
-   </property>
-   <property name="plainText">
-    <string>          email address
-</string>
-   </property>
-  </widget>
-  <widget class="QPlainTextEdit" name="id_passport">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>230</y>
-     <width>221</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <weight>50</weight>
-     <italic>true</italic>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPlainTextEdit{color:grey;}
-</string>
-   </property>
-   <property name="plainText">
-    <string>        id number/ passport number
-</string>
-   </property>
-  </widget>
   <widget class="QRadioButton" name="driver_button">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>420</y>
+     <x>350</x>
+     <y>440</y>
      <width>100</width>
      <height>20</height>
     </rect>
@@ -252,8 +122,8 @@
   <widget class="QRadioButton" name="admin_button">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>380</y>
+     <x>350</x>
+     <y>400</y>
      <width>100</width>
      <height>20</height>
     </rect>
@@ -268,8 +138,8 @@
   <widget class="QRadioButton" name="user_button">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>460</y>
+     <x>350</x>
+     <y>480</y>
      <width>100</width>
      <height>20</height>
     </rect>
@@ -285,14 +155,14 @@
    <property name="geometry">
     <rect>
      <x>650</x>
-     <y>530</y>
-     <width>91</width>
+     <y>540</y>
+     <width>111</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Georgia</family>
+     <family>Segoe UI</family>
      <pointsize>12</pointsize>
      <weight>75</weight>
      <bold>true</bold>
@@ -309,8 +179,8 @@
   <widget class="QLabel" name="admin_pic">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>370</y>
+     <x>420</x>
+     <y>390</y>
      <width>51</width>
      <height>41</height>
     </rect>
@@ -325,8 +195,8 @@
   <widget class="QLabel" name="driver_pic">
    <property name="geometry">
     <rect>
-     <x>430</x>
-     <y>410</y>
+     <x>440</x>
+     <y>430</y>
      <width>31</width>
      <height>41</height>
     </rect>
@@ -341,8 +211,8 @@
   <widget class="QLabel" name="user_pic">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>450</y>
+     <x>420</x>
+     <y>470</y>
      <width>61</width>
      <height>41</height>
     </rect>
@@ -352,6 +222,121 @@
    </property>
    <property name="pixmap">
     <pixmap>users copy 2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="firstname_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>160</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPlainTextEdit{color:grey;}
+</string>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>firstname</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="firstname_3">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>160</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPlainTextEdit{color:grey;}
+</string>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>lastname</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="firstname_4">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>230</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPlainTextEdit{color:grey;}
+</string>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>id number/ passport number </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="firstname_5">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>300</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPlainTextEdit{color:grey;}
+</string>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>phone number</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="firstname_6">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>300</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPlainTextEdit{color:grey;}
+</string>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>email</string>
    </property>
   </widget>
  </widget>
