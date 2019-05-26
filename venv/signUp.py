@@ -1,6 +1,5 @@
 import mysql.connector
-class Register():
-
+class SignUp():
     mydb = mysql.connector.connect(
         host="35.198.233.244",
         user="root",
@@ -9,46 +8,30 @@ class Register():
         port="3306"
     )
     mycursor = mydb.cursor()
+    user = ''
+    password = ''
+
     def __init__(self, user, password):
         self.user = user
         self.password = password
 
-    def SignIn(self):
-        self.mycursor.execute("SELECT Username,Password from Customer")
-        myresult=self.mycursor.fetchall()
-        print(myresult)
-
-    def binarySearch(self,arr, l, r, x):
-        # Check base case
-        if r >= l:
-            mid = l + (r - l) // 2
-            # If element is present at the middle itself
-            if arr[mid][0] == x:
-                return True
-            # If element is smaller than mid, then it can only
-            # be present in left subarray
-            elif arr[mid][0] > x:
-                return self.binarySearch(arr, l, mid - 1, x)
-                # Else the element can only be present in right subarray
-            else:
-                return self.binarySearch(arr, mid + 1, r, x)
-        else:
-            # Element is not present in the array
-            return False
-
     def UserExist(self):
-        self.mycursor.execute("SELECT  Username FROM Customer")
-        myresult=self.mycursor.fetchall()
-        t = self.binarySearch(myresult,0,len(myresult),self.user)
-        if t == True:
-            return True
-        else:
-            return False
-    def signIn(self):
-        self.
+        cursor.execute("SELECT Username, FROM Customer")
+        column_names = [desc[0] for desc in self.mycursor.description]
+        print(column_names)
+
+        #self.mycursor.execute("SELECT Username FROM Customer")
+        #column_names = [desc[0] for desc in cursor.description]
+        #myresult=self.mycursor.fetchall()
+        #for k in myresult:
+        #    print(k)
+        #if self.user in myresult:
+         # return False
+        #else:
+        #  return True
 
     def signUp(self):
-        if(self.UserExist()==False):
+        if(self.UserExist()==True):
           sql = "INSERT INTO Customer(Username,Password) VALUES (%s, %s)"
           val = (self.user, self.password)
           self.mycursor.execute(sql, val)
@@ -62,9 +45,9 @@ class Register():
 
         for x in myresult:
             print(x)
-a=SignIn_signUp( 'Somphon','123456')
-a.SignIn()
 
+a=SignUp('manyou','123456')
+a.UserExist()
 
 # mycursor.execute("SELECT Username, Password FROM Customer")
 # myresult = mycursor.fetchall()
