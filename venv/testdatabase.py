@@ -14,14 +14,22 @@ class SignUp():
     def __init__(self, user, password):
         self.user = user
         self.password = password
+
     def UserExist(self):
-        self.mycursor.execute("SELECT Username FROM Customer")
-        myresult=self.mycursor.fetchall()
-        print(myresult)
-        if self.user in myresult:
-          return False
-        else:
-          return True
+        cursor.execute("SELECT Username, FROM Customer")
+        column_names = [desc[0] for desc in self.mycursor.description]
+        print(column_names)
+
+        #self.mycursor.execute("SELECT Username FROM Customer")
+        #column_names = [desc[0] for desc in cursor.description]
+        #myresult=self.mycursor.fetchall()
+        #for k in myresult:
+        #    print(k)
+        #if self.user in myresult:
+         # return False
+        #else:
+        #  return True
+
     def signUp(self):
         if(self.UserExist()==True):
           sql = "INSERT INTO Customer(Username,Password) VALUES (%s, %s)"
@@ -37,9 +45,9 @@ class SignUp():
 
         for x in myresult:
             print(x)
+
 a=SignUp('manyou','123456')
-a.signUp()
-a.print()
+a.UserExist()
 
 # mycursor.execute("SELECT Username, Password FROM Customer")
 # myresult = mycursor.fetchall()
