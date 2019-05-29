@@ -109,8 +109,8 @@
   <widget class="QRadioButton" name="radioButton">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>290</y>
+     <x>310</x>
+     <y>250</y>
      <width>191</width>
      <height>20</height>
     </rect>
@@ -131,8 +131,8 @@
   <widget class="QRadioButton" name="radioButton_2">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>340</y>
+     <x>310</x>
+     <y>300</y>
      <width>171</width>
      <height>20</height>
     </rect>
@@ -153,8 +153,8 @@
   <widget class="QLabel" name="pic">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>390</y>
+     <x>310</x>
+     <y>370</y>
      <width>181</width>
      <height>201</height>
     </rect>
@@ -181,25 +181,6 @@
    <property name="icon">
     <iconset>
      <normaloff>shipping.png</normaloff>shipping.png</iconset>
-   </property>
-  </widget>
-  <widget class="QRadioButton" name="radioButton_3">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>240</y>
-     <width>201</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Add new admin / driver</string>
    </property>
   </widget>
  </widget>
