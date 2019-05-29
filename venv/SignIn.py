@@ -13,21 +13,17 @@ class SignIn():
         self.user = user
         self.password = password
 
-    def UserExist(self):
-        self.mycursor.execute("SELECT  Username FROM Customer")
-        myresult=self.mycursor.fetchall()
-        t = self.binarySearch(myresult,0,len(myresult),self.user)
-        if t == True:
-            return True
-        else:
-            return False
 
     def SignIn(self):
-        self.mycursor.execute("SELECT Username,Password from Customer")
+        if(self.user[0:3]=='Ad_' or self.user=='pnmoiannnygcoeu362'):# if admin
+            self.mycursor.execute("SELECT Username,Password from Admin")
+        else:
+            self.mycursor.execute("SELECT Username,Password from Customer")
         myresult=self.mycursor.fetchall()
         for i,j in myresult:
             if self.user==i and self.password==j:
                 return True
         return False
-a=SignIn('Pong','123456')
+
+a=SignIn('pnmoiannnygcoeu362','qwerty')
 print(a.SignIn())

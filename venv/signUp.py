@@ -1,4 +1,5 @@
 import mysql.connector
+class InValid(Exception): pass
 class SignUp():
     mydb = mysql.connector.connect(
         host="35.198.233.244",
@@ -16,7 +17,10 @@ class SignUp():
         self.password = password
 
     def UserExist(self):
-        self.mycursor.execute("SELECT  Username FROM Customer")
+        if(self.user[0:3]=='Ad_'):# if admin
+            self.mycursor.execute("SELECT  Username FROM Admin")
+        else:
+            self.mycursor.execute("SELECT  Username FROM Customers")
         myresult=self.mycursor.fetchall()
         DataUser=[x[0] for x in myresult]
         for i in DataUser:
@@ -26,24 +30,27 @@ class SignUp():
                 return False
 
     def signUp(self):
-        if(self.UserExist()==False):
-          sql = "INSERT INTO Customer(Username,Password) VALUES (%s, %s)"
-          val = (self.user, self.password)
-          self.mycursor.execute(sql, val)
-          self.mydb.commit()
+        if(self.UserExist()==False and self.user[0:3]=='Ad_'):
+            sql = "INSERT INTO Admin(Username,Password) VALUES (%s, %s)"
+            val = (self.user, self.password)
+            self.mycursor.execute(sql, val)
+            self.mydb.commit()
+        elif(self.UserExist()==False and self.user[0:3]!='Ad_'):
+            sql = "INSERT INTO Customers(Username,Password) VALUES (%s, %s)"
+            val = (self.user, self.password)
+            self.mycursor.execute(sql, val)
+            self.mydb.commit()
         else:
-          raise InValid('User is already exist')
+            raise InValid('User is already exist')
 
     def print(self):
-        self.mycursor.execute("SELECT Username, Password FROM Customer")
+        self.mycursor.execute("SELECT Username, Password FROM Customers")
         myresult = self.mycursor.fetchall()
 
         for x in myresult:
             print(x)
-
-a=SignUp('Somphon','123456')
-print(a.UserExist())
-
+a=SignUp('Ad_pong','123456')
+a.signUp()
 # mycursor.execute("SELECT Username, Password FROM Customer")
 # myresult = mycursor.fetchall()
 #
