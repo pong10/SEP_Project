@@ -36,7 +36,7 @@ class Admin(Employee):
         return False
 
 t=Admin("somphon","123456",'0922795229','manza1921@hotmail.com')
-print(t.generate())
+print(t.generate('TH'))
 
 
 
