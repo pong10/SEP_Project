@@ -1,7 +1,8 @@
 from Employee import *
+from Parcel import *
 class Driver(Employee):
 
-    state_of_parcel=['Parcel is in the source branch','Parcel Express prepare to deliver','Parcel is at its destination','Waiting for receiver','Parcel receive']
+    state_of_parcel=['Parcel is in the source branch','Parcel Express driver prepare to deliver','Parcel is at its destination','Waiting for receiver','Parcel receive']
 
     Province = ['Chiang_Mai', 'Chiang_Rai', 'Phayao','Nan','Lamphun','Lampang','Phrae','Uttaradit','Tak','Sukhothai','Phitsanulok','Kamphaeng_Phet','Phichit'
     ,'Uthai_Thani','Nakhon_Sawan','Phetchabun','Loei','Udon_Thani','Nongbua_Lumphoo','Nong_Khai','Sakon_Nakhon','Nakhon_Phanom','Mukdahan','Kalasin','Maha Sarakham','Khon Kaen'
@@ -12,7 +13,15 @@ class Driver(Employee):
 
     def __init__(self, name, address, phone, email):
         super().__init__(name,address,phone,email)
+        self.Current_state=-1
+
+    def getState_of_parcel(self):
+        return self.Current_state
+
+    def collected(self,address):
+        self.Current_state=1
 
     def update(self,provinceReach):
+        return True
 
 

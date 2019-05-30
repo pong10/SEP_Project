@@ -23,11 +23,13 @@ class SignUp():
             self.mycursor.execute("SELECT  Username FROM Customers")
         myresult=self.mycursor.fetchall()
         DataUser=[x[0] for x in myresult]
+        print(DataUser)
         for i in DataUser:
+            print(i)
+            print(self.user)
             if(self.user in i):
                 return True
-            else:
-                return False
+        return False
 
     def signUp(self):
         if(self.UserExist()==False and self.user[0:3]=='Ad_'):
