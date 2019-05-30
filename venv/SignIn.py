@@ -13,7 +13,6 @@ class SignIn():
         self.user = user
         self.password = password
 
-
     def SignIn(self):
         if(self.user[0:3]=='Ad_' or self.user=='pnmoiannnygcoeu362'):# if admin
             self.mycursor.execute("SELECT Username,Password from Admin")
