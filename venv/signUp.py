@@ -18,12 +18,17 @@ class SignUp():
         self.password = password
 
     def UserIdCreation(self):
-        front = '000'
+        front = '0'
         body = uuid.uuid4().int
-        body=body%10000000
-        code = front+str(body)
+        body=str(body)
+        code = front+(body[0:5])
         return code
-
+    def insertDatabase(self,firstname,lastname,phoneNumber,email,province):
+        userID=self.UserIdCreation()
+        #userID=int(userID)
+        userName=firstname+" "+lastname
+        command="insert into User(UserName,PhoneNumber, Email,Province)values(%s,%s,%s,%s)"
+        self.mycursor.execute(command,(userName,phoneNumber,email,province))
     def UserExist(self):
         if(self.user[0:3]=='Ad_'):# if admin
             self.mycursor.execute("SELECT  Username FROM Admin")
@@ -33,8 +38,6 @@ class SignUp():
         DataUser=[x[0] for x in myresult]
         print(DataUser)
         for i in DataUser:
-            print(i)
-            print(self.user)
             if(self.user in i):
                 return True
         return False
@@ -56,9 +59,7 @@ class SignUp():
     def print(self):
         self.mycursor.execute("SELECT Username, Password FROM Customers")
         myresult = self.mycursor.fetchall()
-
         for x in myresult:
             print(x)
-a=SignUp('Ad_pong','123456')
-print(a.mycursor)
-
+t=SignUp('Usesdfdsaf','sdafsdfsdf')
+print(t.UserIdCreation())

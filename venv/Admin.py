@@ -20,11 +20,18 @@ class Admin(Employee):
         code = front + body + countrycode
         return code
 
-    def createTrackingNumber(self,name):
+    #def insertCreateDatabase(self,sender_firstname,sender_lastname,sender_address,sender_province,sender_postcode,sender_contact,receiver_firstname,receiver_lastname,receiver_address,receiver_province,receiver_postcode,receiver_contact):
+    #    sender_name=sender_firstname+sender_lastname
+    #    receiver_name=receiver_firstname+receiver_lastname
+    #    command="insert into Parcel(Tracking_id,Sender,Sender_address,Sender_province,Sender_postcode,Sender_contact,Receiver,Receiver_address,Receiver_province,Receiver_postcode,Receiver_contact)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+    #    self.mycursor.execute(command,())
+
+    def createTrackingNumber(self,sender_firstname,sender_lastname,sender_address,sender_province,sender_postcode,sender_contact,receiver_firstname,receiver_lastname,receiver_address,receiver_province,receiver_postcode,receiver_contact):
+        sender_name=sender_firstname+sender_lastname
+        receiver_name=receiver_firstname+receiver_lastname
+        command = "insert into Parcel(Tracking_id,Sender,Sender_address,Sender_province,Sender_postcode,Sender_contact,Receiver,Receiver_address,Receiver_province,Receiver_postcode,Receiver_contact)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
         tracking_id=  self.generate('TH')
-        sql = "INSERT INTO Tracking_ID(ID,NameOfUser) VALUES (%s, %s)"
-        val = (tracking_id,name)
-        self.mycursor.execute(sql, val)
+        self.mycursor.execute(command,(tracking_id,sender_name,sender_lastname,sender_address,sender_province,sender_postcode,sender_contact,receiver_firstname,receiver_lastname,receiver_address,receiver_province,receiver_postcode,receiver_contact))
         self.mydb.commit()
 
 

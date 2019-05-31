@@ -20,7 +20,7 @@ class Driver(Employee):
 
 
     def getAllParcelByProvinceOrigin(self,Province):
-        Parcel.mycursor.execute("SELECT TrackingNumber,CurrentLocation from Parcel")
+        Parcel.mycursor.execute("SELECT TrackingNumber,Sender_province from Parcel")
         tracking_number=[]
         myresult = Parcel.mycursor.fetchall()
         for Traking_number,Location in myresult:
@@ -29,7 +29,7 @@ class Driver(Employee):
         return tracking_number
 
     def getAllParcelByProvinceFinal(self, Province):
-        Parcel.mycursor.execute("SELECT TrackingNumber,Destination from Parcel")
+        Parcel.mycursor.execute("SELECT TrackingNumber,Receiver_province from Parcel")
         tracking_number = []
         myresult = Parcel.mycursor.fetchall()
         for Traking_number, Location in myresult:
