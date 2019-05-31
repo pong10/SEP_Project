@@ -17,12 +17,9 @@ class SignIn():
         if(self.user[0:3]=='Ad_' or self.user=='pnmoiannnygcoeu362'):# if admin
             self.mycursor.execute("SELECT Username,Password from Admin")
         else:
-            self.mycursor.execute("SELECT Username,Password from Customer")
+            self.mycursor.execute("SELECT Username,Password from Users")
         myresult=self.mycursor.fetchall()
         for i,j in myresult:
             if self.user==i and self.password==j:
                 return True
         return False
-
-a=SignIn('pnmoiannnygcoeu362','qwerty')
-print(a.SignIn())

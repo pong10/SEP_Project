@@ -73,5 +73,6 @@ class SignUp():
         myresult = self.mycursor.fetchall()
         for x in myresult:
             print(x)
+
 t=SignUp('Usesdfdsaf','sdafsdfsdf','Somphon','Reufds','02455666','manza1921@hiotaert','asdsad')
 t.signUp()
