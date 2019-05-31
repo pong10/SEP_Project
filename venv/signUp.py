@@ -23,12 +23,20 @@ class SignUp():
         body=str(body)
         code = front+(body[0:5])
         return code
+
     def insertDatabase(self,firstname,lastname,phoneNumber,email,province):
         userID=self.UserIdCreation()
         #userID=int(userID)
         userName=firstname+" "+lastname
         command="insert into User(UserName,PhoneNumber, Email,Province)values(%s,%s,%s,%s)"
         self.mycursor.execute(command,(userName,phoneNumber,email,province))
+
+    def insertDatabaseAdmin(self,firstname,lastname,phoneNumber,email,province):
+        userName=firstname+" "+lastname
+        command = "insert into Admin_data(adminName,PhoneNumber, Email,Province)values(%s,%s,%s,%s)"
+        self.mycursor.execute(command, (userName, phoneNumber, email, province))
+        self.mydb.commit()
+
     def UserExist(self):
         if(self.user[0:3]=='Ad_'):# if admin
             self.mycursor.execute("SELECT  Username FROM Admin")
@@ -61,5 +69,5 @@ class SignUp():
         myresult = self.mycursor.fetchall()
         for x in myresult:
             print(x)
-t=SignUp('Usesdfdsaf','sdafsdfsdf')
-print(t.UserIdCreation())
+#t=SignUp('Usesdfdsaf','sdafsdfsdf')
+#t.insertDatabaseAdmin('somphon','rueangsri','081547856','manza@hotmail.com','Bankok')

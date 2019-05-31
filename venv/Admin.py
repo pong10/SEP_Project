@@ -20,18 +20,13 @@ class Admin(Employee):
         body = body.upper()[0:8]
         code = front + body + countrycode
         return code
-
-    def createTrackingNumber(self,sender_firstname,sender_lastname,sender_address,sender_province,sender_postcode,sender_contact,receiver_firstname,receiver_lastname,receiver_address,receiver_province,receiver_postcode,receiver_contact):
+    def createTrackingNumber(self,tracking_id,sender_firstname,sender_lastname,sender_address,sender_province,sender_postcode,sender_contact,receiver_firstname,receiver_lastname,receiver_address,receiver_province,receiver_postcode,receiver_contact):
         sender_name=sender_firstname+sender_lastname
         receiver_name=receiver_firstname+receiver_lastname
-        command = "insert into Parcel(Tracking_id,Sender,Sender_address,Sender_province,Sender_postcode,Sender_contact,Receiver,Receiver_address,Receiver_province,Receiver_postcode,Receiver_contact)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
-        tracking_id=  self.generate('TH')
-        self.mycursor.execute(command,(tracking_id,sender_name,sender_lastname,sender_address,sender_province,sender_postcode,sender_contact,receiver_firstname,receiver_lastname,receiver_address,receiver_province,receiver_postcode,receiver_contact))
+        command = "insert into Parcel(TrackingNumber,Sender,Sender_postcode,Sender_address,Sender_province,Sender_contact,Receiver,Receiver_address,Receiver_province,Receiver_postcode,Receiver_contact)values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+        self.mycursor.execute(command,(tracking_id,sender_name,sender_postcode,sender_address,sender_province,sender_contact,receiver_name,receiver_address,receiver_province,receiver_postcode,receiver_contact))
         self.mydb.commit()
 
 
 t=Admin("somphon","123456",'0922795229','manza1921@hotmail.com')
-print(t.generate('TH'))
-
-
-
+t.createTrackingNumber('112334566','somphon','rueangsri','57/4','bankokok','12000','08245245','Pong','Buffalo','57/8','adsfdsaf','13120','2448484')
