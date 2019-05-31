@@ -10,8 +10,32 @@
     <height>600</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>SignUp</string>
   </property>
   <widget class="QLabel" name="bg">
    <property name="geometry">
@@ -118,7 +142,7 @@
     <rect>
      <x>220</x>
      <y>170</y>
-     <width>141</width>
+     <width>151</width>
      <height>31</height>
     </rect>
    </property>
@@ -265,6 +289,9 @@
      <family>Georgia</family>
     </font>
    </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
@@ -313,6 +340,31 @@
     <pixmap>location_png_811383 copy 2.png</pixmap>
    </property>
   </widget>
+  <widget class="QCommandLinkButton" name="done_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>530</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>BACK</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>shipping.png</normaloff>shipping.png</iconset>
+   </property>
+  </widget>
   <zorder>bg</zorder>
   <zorder>label_2</zorder>
   <zorder>text</zorder>
@@ -328,6 +380,7 @@
   <zorder>Ms_2</zorder>
   <zorder>lineEdit_7</zorder>
   <zorder>done</zorder>
+  <zorder>done_2</zorder>
  </widget>
  <resources/>
  <connections/>

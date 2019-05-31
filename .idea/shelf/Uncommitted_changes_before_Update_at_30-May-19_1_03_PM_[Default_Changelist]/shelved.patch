@@ -1,0 +1,904 @@
+Index: UI/HomePage.ui
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ui version=\"4.0\">\r\n <class>Form</class>\r\n <widget class=\"QWidget\" name=\"Form\">\r\n  <property name=\"geometry\">\r\n   <rect>\r\n    <x>0</x>\r\n    <y>0</y>\r\n    <width>800</width>\r\n    <height>600</height>\r\n   </rect>\r\n  </property>\r\n  <property name=\"windowTitle\">\r\n   <string>Form</string>\r\n  </property>\r\n  <widget class=\"QLabel\" name=\"Background\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>0</x>\r\n     <y>0</y>\r\n     <width>801</width>\r\n     <height>601</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"styleSheet\">\r\n    <string notr=\"true\">QLabel{background: papayawhip;}</string>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string/>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLabel\" name=\"LOGO\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>190</x>\r\n     <y>70</y>\r\n     <width>386</width>\r\n     <height>58</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n     <pointsize>30</pointsize>\r\n     <weight>75</weight>\r\n     <italic>true</italic>\r\n     <bold>true</bold>\r\n    </font>\r\n   </property>\r\n   <property name=\"styleSheet\">\r\n    <string notr=\"true\">QLabel{color:steelblue;}\r\n</string>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>Parcel Express</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLabel\" name=\"logo_pic\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>580</x>\r\n     <y>80</y>\r\n     <width>81</width>\r\n     <height>51</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string/>\r\n   </property>\r\n   <property name=\"pixmap\">\r\n    <pixmap>purepng.com-white-paper-planpaper-planeaeroplanepaper-gliderpaper-dartaircraftfolded-paperpaperboardclipart-1421526588176couen copy 2.png</pixmap>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLabel\" name=\"username\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>300</x>\r\n     <y>150</y>\r\n     <width>121</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n     <pointsize>14</pointsize>\r\n    </font>\r\n   </property>\r\n   <property name=\"styleSheet\">\r\n    <string notr=\"true\">QLabel{color:dimgrey;}\r\n</string>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>Username</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"username_lineEdit\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>300</x>\r\n     <y>180</y>\r\n     <width>181</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLabel\" name=\"password\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>300</x>\r\n     <y>230</y>\r\n     <width>101</width>\r\n     <height>16</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n     <pointsize>14</pointsize>\r\n    </font>\r\n   </property>\r\n   <property name=\"styleSheet\">\r\n    <string notr=\"true\">QLabel{color:dimgrey;}\r\n</string>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>Password</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"password_lineEdit\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>300</x>\r\n     <y>250</y>\r\n     <width>181</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QPushButton\" name=\"SignIn\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>260</x>\r\n     <y>310</y>\r\n     <width>113</width>\r\n     <height>32</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"styleSheet\">\r\n    <string notr=\"true\"/>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>SignIn</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QPushButton\" name=\"SignUp\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>420</x>\r\n     <y>310</y>\r\n     <width>113</width>\r\n     <height>32</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>SignUp</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLabel\" name=\"label\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>-40</x>\r\n     <y>340</y>\r\n     <width>841</width>\r\n     <height>261</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string/>\r\n   </property>\r\n   <property name=\"pixmap\">\r\n    <pixmap>paper_plane_PNG20 copy 2.png</pixmap>\r\n   </property>\r\n  </widget>\r\n  <zorder>Background</zorder>\r\n  <zorder>LOGO</zorder>\r\n  <zorder>logo_pic</zorder>\r\n  <zorder>username</zorder>\r\n  <zorder>username_lineEdit</zorder>\r\n  <zorder>password</zorder>\r\n  <zorder>password_lineEdit</zorder>\r\n  <zorder>label</zorder>\r\n  <zorder>SignIn</zorder>\r\n  <zorder>SignUp</zorder>\r\n </widget>\r\n <resources/>\r\n <connections/>\r\n</ui>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- UI/HomePage.ui	(revision 62293eb1ecf6c2044f34959373a7ff7dbd010da7)
++++ UI/HomePage.ui	(date 1559040633061)
+@@ -136,6 +136,12 @@
+      <height>31</height>
+     </rect>
+    </property>
++   <property name="inputMethodHints">
++    <set>Qt::ImhNone</set>
++   </property>
++   <property name="echoMode">
++    <enum>QLineEdit::Password</enum>
++   </property>
+   </widget>
+   <widget class="QPushButton" name="SignIn">
+    <property name="geometry">
+Index: UI/homepage.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># -*- coding: utf-8 -*-\r\n\r\n# Form implementation generated from reading ui file 'HomePage.ui',\r\n# licensing of 'HomePage.ui' applies.\r\n#\r\n# Created: Sun May 26 14:21:09 2019\r\n#      by: pyside2-uic  running on PySide2 5.12.0\r\n#\r\n# WARNING! All changes made in this file will be lost!\r\n\r\nfrom PySide2 import QtCore, QtGui, QtWidgets\r\n\r\nclass Ui_Form(object):\r\n    def setupUi(self, Form):\r\n        Form.setObjectName(\"Form\")\r\n        Form.resize(800, 600)\r\n        self.Background = QtWidgets.QLabel(Form)\r\n        self.Background.setGeometry(QtCore.QRect(0, 0, 801, 601))\r\n        self.Background.setStyleSheet(\"QLabel{background: papayawhip;}\")\r\n        self.Background.setText(\"\")\r\n        self.Background.setObjectName(\"Background\")\r\n        self.LOGO = QtWidgets.QLabel(Form)\r\n        self.LOGO.setGeometry(QtCore.QRect(190, 70, 386, 58))\r\n        font = QtGui.QFont()\r\n        font.setFamily(\"Georgia\")\r\n        font.setPointSize(30)\r\n        font.setWeight(75)\r\n        font.setItalic(True)\r\n        font.setBold(True)\r\n        self.LOGO.setFont(font)\r\n        self.LOGO.setStyleSheet(\"QLabel{color:steelblue;}\\n\"\r\n\"\")\r\n        self.LOGO.setObjectName(\"LOGO\")\r\n        self.logo_pic = QtWidgets.QLabel(Form)\r\n        self.logo_pic.setGeometry(QtCore.QRect(580, 80, 81, 51))\r\n        self.logo_pic.setText(\"\")\r\n        self.logo_pic.setPixmap(QtGui.QPixmap(\"purepng.com-white-paper-planpaper-planeaeroplanepaper-gliderpaper-dartaircraftfolded-paperpaperboardclipart-1421526588176couen copy 2.png\"))\r\n        self.logo_pic.setObjectName(\"logo_pic\")\r\n        self.username = QtWidgets.QLabel(Form)\r\n        self.username.setGeometry(QtCore.QRect(300, 150, 121, 31))\r\n        font = QtGui.QFont()\r\n        font.setFamily(\"Georgia\")\r\n        font.setPointSize(14)\r\n        self.username.setFont(font)\r\n        self.username.setStyleSheet(\"QLabel{color:dimgrey;}\\n\"\r\n\"\")\r\n        self.username.setObjectName(\"username\")\r\n        self.username_lineEdit = QtWidgets.QLineEdit(Form)\r\n        self.username_lineEdit.setGeometry(QtCore.QRect(300, 180, 181, 31))\r\n        self.username_lineEdit.setObjectName(\"username_lineEdit\")\r\n        self.password = QtWidgets.QLabel(Form)\r\n        self.password.setGeometry(QtCore.QRect(300, 230, 101, 16))\r\n        font = QtGui.QFont()\r\n        font.setFamily(\"Georgia\")\r\n        font.setPointSize(14)\r\n        self.password.setFont(font)\r\n        self.password.setStyleSheet(\"QLabel{color:dimgrey;}\\n\"\r\n\"\")\r\n        self.password.setObjectName(\"password\")\r\n        self.password_lineEdit = QtWidgets.QLineEdit(Form)\r\n        self.password_lineEdit.setGeometry(QtCore.QRect(300, 250, 181, 31))\r\n        self.password_lineEdit.setObjectName(\"password_lineEdit\")\r\n        self.SignIn = QtWidgets.QPushButton(Form)\r\n        self.SignIn.setGeometry(QtCore.QRect(260, 310, 113, 32))\r\n        font = QtGui.QFont()\r\n        font.setFamily(\"Georgia\")\r\n        self.SignIn.setFont(font)\r\n        self.SignIn.setStyleSheet(\"\")\r\n        self.SignIn.setObjectName(\"SignIn\")\r\n        self.SignUp = QtWidgets.QPushButton(Form)\r\n        self.SignUp.setGeometry(QtCore.QRect(420, 310, 113, 32))\r\n        font = QtGui.QFont()\r\n        font.setFamily(\"Georgia\")\r\n        self.SignUp.setFont(font)\r\n        self.SignUp.setObjectName(\"SignUp\")\r\n        self.label = QtWidgets.QLabel(Form)\r\n        self.label.setGeometry(QtCore.QRect(-40, 340, 841, 261))\r\n        self.label.setText(\"\")\r\n        self.label.setPixmap(QtGui.QPixmap(\"paper_plane_PNG20 copy 2.png\"))\r\n        self.label.setObjectName(\"label\")\r\n\r\n        self.retranslateUi(Form)\r\n        QtCore.QMetaObject.connectSlotsByName(Form)\r\n\r\n    def retranslateUi(self, Form):\r\n        Form.setWindowTitle(QtWidgets.QApplication.translate(\"Form\", \"Form\", None, -1))\r\n        self.LOGO.setText(QtWidgets.QApplication.translate(\"Form\", \"Parcel Express\", None, -1))\r\n        self.username.setText(QtWidgets.QApplication.translate(\"Form\", \"Username\", None, -1))\r\n        self.password.setText(QtWidgets.QApplication.translate(\"Form\", \"Password\", None, -1))\r\n        self.SignIn.setText(QtWidgets.QApplication.translate(\"Form\", \"SignIn\", None, -1))\r\n        self.SignUp.setText(QtWidgets.QApplication.translate(\"Form\", \"SignUp\", None, -1))\r\n\r\n\r\nif __name__ == \"__main__\":\r\n    import sys\r\n    app = QtWidgets.QApplication(sys.argv)\r\n    Form = QtWidgets.QWidget()\r\n    ui = Ui_Form()\r\n    ui.setupUi(Form)\r\n    Form.show()\r\n    sys.exit(app.exec_())\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- UI/homepage.py	(revision 62293eb1ecf6c2044f34959373a7ff7dbd010da7)
++++ UI/homepage.py	(date 1559040639758)
+@@ -3,7 +3,7 @@
+ # Form implementation generated from reading ui file 'HomePage.ui',
+ # licensing of 'HomePage.ui' applies.
+ #
+-# Created: Sun May 26 14:21:09 2019
++# Created: Tue May 28 17:50:39 2019
+ #      by: pyside2-uic  running on PySide2 5.12.0
+ #
+ # WARNING! All changes made in this file will be lost!
+@@ -59,6 +59,8 @@
+         self.password.setObjectName("password")
+         self.password_lineEdit = QtWidgets.QLineEdit(Form)
+         self.password_lineEdit.setGeometry(QtCore.QRect(300, 250, 181, 31))
++        self.password_lineEdit.setInputMethodHints(QtCore.Qt.ImhNone)
++        self.password_lineEdit.setEchoMode(QtWidgets.QLineEdit.Password)
+         self.password_lineEdit.setObjectName("password_lineEdit")
+         self.SignIn = QtWidgets.QPushButton(Form)
+         self.SignIn.setGeometry(QtCore.QRect(260, 310, 113, 32))
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"aa5da6fc-a8b5-4d74-b6d5-ee2956766dbd\" name=\"Default Changelist\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/venv/SignIn.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/venv/SignIn.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/venv/sign.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/venv/sign.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/venv/signUp.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/venv/signUp.py\" afterDir=\"false\" />\r\n    </list>\r\n    <ignored path=\"C:\\Users\\mankk\\OneDrive\\Documents\\GitHub\\SEP_Project\\.idea\\shelf/\" />\r\n    <option name=\"EXCLUDED_CONVERTED_TO_IGNORED\" value=\"true\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"CoverageDataManager\">\r\n    <SUITE FILE_PATH=\"coverage/SEP_Project$testdatabase.coverage\" NAME=\"testdatabase Coverage Results\" MODIFIED=\"1556215868285\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/venv\" />\r\n    <SUITE FILE_PATH=\"coverage/SEP_Project$sign__1_.coverage\" NAME=\"sign (1) Coverage Results\" MODIFIED=\"1555486178617\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/venv\" />\r\n    <SUITE FILE_PATH=\"coverage/Parcel$sign__2_.coverage\" NAME=\"sign (2) Coverage Results\" MODIFIED=\"1554276264651\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/../ManUProject\" />\r\n    <SUITE FILE_PATH=\"coverage/SEP_Project$MySql.coverage\" NAME=\"MySql Coverage Results\" MODIFIED=\"1556099447820\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/venv\" />\r\n    <SUITE FILE_PATH=\"coverage/SEP_Project$views.coverage\" NAME=\"views Coverage Results\" MODIFIED=\"1555490276249\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/mysite/main\" />\r\n    <SUITE FILE_PATH=\"coverage/SEP_Project$signUp.coverage\" NAME=\"signUp Coverage Results\" MODIFIED=\"1558941919709\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/venv\" />\r\n    <SUITE FILE_PATH=\"coverage/SEP_Project$SignIn.coverage\" NAME=\"SignIn Coverage Results\" MODIFIED=\"1558942026212\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/venv\" />\r\n    <SUITE FILE_PATH=\"coverage/Parcel$sign.coverage\" NAME=\"sign Coverage Results\" MODIFIED=\"1554275928638\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/venv\" />\r\n    <SUITE FILE_PATH=\"coverage/Parcel$sign__1_.coverage\" NAME=\"sign (1) Coverage Results\" MODIFIED=\"1554276218150\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/venv\" />\r\n  </component>\r\n  <component name=\"FileEditorManager\">\r\n    <leaf SIDE_TABS_SIZE_LIMIT_KEY=\"300\">\r\n      <file pinned=\"false\" current-in-tab=\"false\">\r\n        <entry file=\"file://$PROJECT_DIR$/venv/Customer.py\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"187\">\r\n              <caret line=\"11\" column=\"23\" selection-start-line=\"11\" selection-start-column=\"23\" selection-end-line=\"11\" selection-end-column=\"23\" />\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n      <file pinned=\"false\" current-in-tab=\"false\">\r\n        <entry file=\"file://$PROJECT_DIR$/venv/MySql.py\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"34\">\r\n              <caret line=\"3\" selection-start-line=\"3\" selection-end-line=\"3\" />\r\n              <folding>\r\n                <element signature=\"e#0#9#0\" expanded=\"true\" />\r\n              </folding>\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n      <file pinned=\"false\" current-in-tab=\"true\">\r\n        <entry file=\"file://$PROJECT_DIR$/venv/signUp.py\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"425\">\r\n              <caret line=\"25\" column=\"28\" lean-forward=\"true\" selection-start-line=\"25\" selection-start-column=\"28\" selection-end-line=\"25\" selection-end-column=\"28\" />\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n      <file pinned=\"false\" current-in-tab=\"false\">\r\n        <entry file=\"file://$PROJECT_DIR$/venv/SignIn.py\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"325\">\r\n              <caret line=\"30\" column=\"20\" selection-start-line=\"30\" selection-start-column=\"20\" selection-end-line=\"30\" selection-end-column=\"20\" />\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n      <file pinned=\"false\" current-in-tab=\"false\">\r\n        <entry file=\"file://$PROJECT_DIR$/venv/sign.py\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"187\">\r\n              <caret line=\"11\" column=\"17\" selection-start-line=\"11\" selection-start-column=\"17\" selection-end-line=\"11\" selection-end-column=\"17\" />\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n      <file pinned=\"false\" current-in-tab=\"false\">\r\n        <entry file=\"file://$PROJECT_DIR$/venv/Sinnn.py\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"216\">\r\n              <caret line=\"20\" column=\"27\" lean-forward=\"true\" selection-start-line=\"20\" selection-start-column=\"27\" selection-end-line=\"20\" selection-end-column=\"27\" />\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n    </leaf>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"UPDATE_TYPE\" value=\"MERGE\" />\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"IdeDocumentHistory\">\r\n    <option name=\"CHANGED_PATHS\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/sign.py\" />\r\n        <option value=\"$PROJECT_DIR$/mysite/mysite/urls.py\" />\r\n        <option value=\"$PROJECT_DIR$/mysite/main/urls.py\" />\r\n        <option value=\"$PROJECT_DIR$/mysite/main/views.py\" />\r\n        <option value=\"$PROJECT_DIR$/mysite/main/models.py\" />\r\n        <option value=\"$PROJECT_DIR$/venv/Customer.py\" />\r\n        <option value=\"$PROJECT_DIR$/venv/Scripts/__init__.py\" />\r\n        <option value=\"$PROJECT_DIR$/venv/MySql.py\" />\r\n        <option value=\"$PROJECT_DIR$/venv/testdatabase.py\" />\r\n        <option value=\"$PROJECT_DIR$/venv/sign.py\" />\r\n        <option value=\"$PROJECT_DIR$/venv/Sinnn.py\" />\r\n        <option value=\"$PROJECT_DIR$/venv/signUp.py\" />\r\n        <option value=\"$PROJECT_DIR$/venv/SignIn.py\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectFrameBounds\" extendedState=\"6\">\r\n    <option name=\"x\" value=\"-10\" />\r\n    <option name=\"y\" value=\"-10\" />\r\n    <option name=\"width\" value=\"995\" />\r\n    <option name=\"height\" value=\"780\" />\r\n  </component>\r\n  <component name=\"ProjectView\">\r\n    <navigator proportions=\"\" version=\"1\">\r\n      <foldersAlwaysOnTop value=\"true\" />\r\n    </navigator>\r\n    <panes>\r\n      <pane id=\"ProjectPane\">\r\n        <subPane>\r\n          <expand>\r\n            <path>\r\n              <item name=\"SEP_Project\" type=\"b2602c69:ProjectViewProjectNode\" />\r\n              <item name=\"SEP_Project\" type=\"462c0819:PsiDirectoryNode\" />\r\n            </path>\r\n            <path>\r\n              <item name=\"SEP_Project\" type=\"b2602c69:ProjectViewProjectNode\" />\r\n              <item name=\"SEP_Project\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"venv\" type=\"462c0819:PsiDirectoryNode\" />\r\n            </path>\r\n          </expand>\r\n          <select />\r\n        </subPane>\r\n      </pane>\r\n      <pane id=\"Scope\" />\r\n    </panes>\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"nodejs_interpreter_path.stuck_in_default_project\" value=\"undefined stuck path\" />\r\n    <property name=\"nodejs_npm_path_reset_for_default_project\" value=\"true\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"com.jetbrains.python.configuration.PythonContentEntriesConfigurable\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\mankk\\PycharmProjects\\Parcel\\venv\" />\r\n      <recent name=\"C:\\Users\\mankk\\PycharmProjects\\Parcel\" />\r\n    </key>\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\mankk\\OneDrive\\Documents\\GitHub\\ManUProject\" />\r\n      <recent name=\"C:\\Users\\mankk\\PycharmProjects\\Parcel\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunDashboard\">\r\n    <option name=\"ruleStates\">\r\n      <list>\r\n        <RuleState>\r\n          <option name=\"name\" value=\"ConfigurationTypeDashboardGroupingRule\" />\r\n        </RuleState>\r\n        <RuleState>\r\n          <option name=\"name\" value=\"StatusDashboardGroupingRule\" />\r\n        </RuleState>\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Python.SignIn\">\r\n    <configuration name=\"MySql\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\r\n      <module name=\"Parcel\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/venv\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/venv/MySql.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"SignIn\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\r\n      <module name=\"Parcel\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/venv\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/venv/SignIn.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"signUp\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\r\n      <module name=\"Parcel\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/venv\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/venv/signUp.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"testdatabase\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\r\n      <module name=\"Parcel\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/venv\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/venv/testdatabase.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"views\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\r\n      <module name=\"Parcel\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/mysite/main\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/mysite/main/views.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.SignIn\" />\r\n        <item itemvalue=\"Python.signUp\" />\r\n        <item itemvalue=\"Python.testdatabase\" />\r\n        <item itemvalue=\"Python.MySql\" />\r\n        <item itemvalue=\"Python.views\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"aa5da6fc-a8b5-4d74-b6d5-ee2956766dbd\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1554273267140</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1554273267140</updated>\r\n      <workItem from=\"1554273273320\" duration=\"2328000\" />\r\n      <workItem from=\"1554276711622\" duration=\"1324000\" />\r\n      <workItem from=\"1554973759106\" duration=\"15000\" />\r\n      <workItem from=\"1555485456947\" duration=\"5068000\" />\r\n      <workItem from=\"1555579803358\" duration=\"97000\" />\r\n      <workItem from=\"1555944535612\" duration=\"789000\" />\r\n      <workItem from=\"1555987422638\" duration=\"1004000\" />\r\n      <workItem from=\"1556094062191\" duration=\"3563000\" />\r\n      <workItem from=\"1556173629113\" duration=\"6632000\" />\r\n      <workItem from=\"1556185340192\" duration=\"71000\" />\r\n      <workItem from=\"1556208171982\" duration=\"7024000\" />\r\n      <workItem from=\"1558884992083\" duration=\"43000\" />\r\n      <workItem from=\"1558939281162\" duration=\"2784000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"ไอนิ้น อย่าขี้เกลียดทำงาน ด้วย\">\r\n      <created>1554276766427</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1554276766427</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TimeTrackingManager\">\r\n    <option name=\"totallyTimeSpent\" value=\"30742000\" />\r\n  </component>\r\n  <component name=\"ToolWindowManager\">\r\n    <frame x=\"-7\" y=\"-7\" width=\"1550\" height=\"838\" extended-state=\"6\" />\r\n    <editor active=\"true\" />\r\n    <layout>\r\n      <window_info active=\"true\" content_ui=\"combo\" id=\"Project\" order=\"0\" visible=\"true\" weight=\"0.19060403\" />\r\n      <window_info id=\"Structure\" order=\"1\" side_tool=\"true\" weight=\"0.25\" />\r\n      <window_info id=\"Favorites\" order=\"2\" side_tool=\"true\" />\r\n      <window_info anchor=\"bottom\" id=\"Message\" order=\"0\" />\r\n      <window_info anchor=\"bottom\" id=\"Find\" order=\"1\" />\r\n      <window_info anchor=\"bottom\" id=\"Run\" order=\"2\" visible=\"true\" weight=\"0.30311614\" />\r\n      <window_info anchor=\"bottom\" id=\"Debug\" order=\"3\" weight=\"0.39943343\" />\r\n      <window_info anchor=\"bottom\" id=\"Cvs\" order=\"4\" weight=\"0.25\" />\r\n      <window_info anchor=\"bottom\" id=\"Inspection\" order=\"5\" weight=\"0.4\" />\r\n      <window_info anchor=\"bottom\" id=\"TODO\" order=\"6\" />\r\n      <window_info anchor=\"bottom\" id=\"Docker\" order=\"7\" show_stripe_button=\"false\" />\r\n      <window_info anchor=\"bottom\" id=\"Version Control\" order=\"8\" />\r\n      <window_info anchor=\"bottom\" id=\"Database Changes\" order=\"9\" />\r\n      <window_info anchor=\"bottom\" id=\"Event Log\" order=\"10\" side_tool=\"true\" />\r\n      <window_info anchor=\"bottom\" id=\"Terminal\" order=\"11\" weight=\"0.32577905\" />\r\n      <window_info anchor=\"bottom\" id=\"Python Console\" order=\"12\" />\r\n      <window_info anchor=\"right\" id=\"Commander\" internal_type=\"SLIDING\" order=\"0\" type=\"SLIDING\" weight=\"0.4\" />\r\n      <window_info anchor=\"right\" id=\"Ant Build\" order=\"1\" weight=\"0.25\" />\r\n      <window_info anchor=\"right\" content_ui=\"combo\" id=\"Hierarchy\" order=\"2\" weight=\"0.25\" />\r\n      <window_info anchor=\"right\" id=\"SciView\" order=\"3\" />\r\n      <window_info anchor=\"right\" id=\"Database\" order=\"4\" />\r\n    </layout>\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"1\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"ไอนิ้น อย่าขี้เกลียดทำงาน ด้วย\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"ไอนิ้น อย่าขี้เกลียดทำงาน ด้วย\" />\r\n  </component>\r\n  <component name=\"editorHistoryManager\">\r\n    <entry file=\"file://$PROJECT_DIR$/venv/Lib/site-packages/firebase_admin/credentials.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"136\">\r\n          <caret line=\"82\" selection-start-line=\"82\" selection-end-line=\"82\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/../ManUProject/sign.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"51\">\r\n          <caret line=\"4\" selection-start-line=\"4\" selection-end-line=\"4\" />\r\n          <folding>\r\n            <element signature=\"e#0#21#0\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/mysite/mysite/settings.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"-884\" />\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/mysite/manage.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state>\r\n          <caret column=\"5\" selection-start-column=\"5\" selection-end-column=\"5\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/mysite/main/urls.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"340\">\r\n          <caret line=\"21\" column=\"44\" selection-start-line=\"21\" selection-start-column=\"44\" selection-end-line=\"21\" selection-end-column=\"44\" />\r\n          <folding>\r\n            <element signature=\"e#631#659#0\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/mysite/main/views.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"102\">\r\n          <caret line=\"8\" selection-start-line=\"8\" selection-end-line=\"8\" />\r\n          <folding>\r\n            <element signature=\"e#0#35#0\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/mysite/mysite/urls.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"306\">\r\n          <caret line=\"19\" column=\"35\" selection-start-line=\"19\" selection-start-column=\"35\" selection-end-line=\"19\" selection-end-column=\"35\" />\r\n          <folding>\r\n            <element signature=\"e#630#662#0\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/mysite/main/models.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"136\">\r\n          <caret line=\"8\" column=\"17\" selection-start-line=\"8\" selection-start-column=\"17\" selection-end-line=\"8\" selection-end-column=\"17\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/venv/Number_Generater.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\" />\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/venv/Scripts/__init__.py\" />\r\n    <entry file=\"file://$USER_HOME$/PycharmProjects/Parcel/venv/Lib/site-packages/mysql/connector/connection.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"235\">\r\n          <caret line=\"447\" lean-forward=\"true\" selection-start-line=\"447\" selection-end-line=\"447\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/venv/testdatabase.py\" />\r\n    <entry file=\"file://$PROJECT_DIR$/venv/Customer.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"187\">\r\n          <caret line=\"11\" column=\"23\" selection-start-line=\"11\" selection-start-column=\"23\" selection-end-line=\"11\" selection-end-column=\"23\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/venv/MySql.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"34\">\r\n          <caret line=\"3\" selection-start-line=\"3\" selection-end-line=\"3\" />\r\n          <folding>\r\n            <element signature=\"e#0#9#0\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/codecs.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"278\">\r\n          <caret line=\"332\" selection-start-line=\"332\" selection-end-line=\"332\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/venv/Sinnn.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"216\">\r\n          <caret line=\"20\" column=\"27\" lean-forward=\"true\" selection-start-line=\"20\" selection-start-column=\"27\" selection-end-line=\"20\" selection-end-column=\"27\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/venv/sign.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"187\">\r\n          <caret line=\"11\" column=\"17\" selection-start-line=\"11\" selection-start-column=\"17\" selection-end-line=\"11\" selection-end-column=\"17\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/venv/SignIn.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"325\">\r\n          <caret line=\"30\" column=\"20\" selection-start-line=\"30\" selection-start-column=\"20\" selection-end-line=\"30\" selection-end-column=\"20\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/venv/signUp.py\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"425\">\r\n          <caret line=\"25\" column=\"28\" lean-forward=\"true\" selection-start-line=\"25\" selection-start-column=\"28\" selection-end-line=\"25\" selection-end-column=\"28\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 62293eb1ecf6c2044f34959373a7ff7dbd010da7)
++++ .idea/workspace.xml	(date 1559196217708)
+@@ -2,12 +2,15 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="aa5da6fc-a8b5-4d74-b6d5-ee2956766dbd" name="Default Changelist" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_26_2019_3_27_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_26_2019_3_27_PM__Default_Changelist_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/venv/SignIn.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/SignIn.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/venv/sign.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/sign.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/venv/signUp.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/signUp.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/UI/HomePage.ui" beforeDir="false" afterPath="$PROJECT_DIR$/UI/HomePage.ui" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/UI/SignUp.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI/SignUp.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/UI/SignUp.ui" beforeDir="false" afterPath="$PROJECT_DIR$/UI/SignUp.ui" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/UI/SignUp_user.ui" beforeDir="false" afterPath="$PROJECT_DIR$/UI/SignUp_user.ui" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/UI/homepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI/homepage.py" afterDir="false" />
+     </list>
+-    <ignored path="C:\Users\mankk\OneDrive\Documents\GitHub\SEP_Project\.idea\shelf/" />
++    <ignored path="C:\Users\Pong\Documents\GitHub\SEP_Project\.idea\shelf/" />
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -15,71 +18,18 @@
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+   <component name="CoverageDataManager">
+-    <SUITE FILE_PATH="coverage/SEP_Project$testdatabase.coverage" NAME="testdatabase Coverage Results" MODIFIED="1556215868285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+-    <SUITE FILE_PATH="coverage/SEP_Project$sign__1_.coverage" NAME="sign (1) Coverage Results" MODIFIED="1555486178617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
++    <SUITE FILE_PATH="coverage/SEP_Project$sign__1_.coverage" NAME="sign (1) Coverage Results" MODIFIED="1554276731810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+     <SUITE FILE_PATH="coverage/Parcel$sign__2_.coverage" NAME="sign (2) Coverage Results" MODIFIED="1554276264651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ManUProject" />
+-    <SUITE FILE_PATH="coverage/SEP_Project$MySql.coverage" NAME="MySql Coverage Results" MODIFIED="1556099447820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+-    <SUITE FILE_PATH="coverage/SEP_Project$views.coverage" NAME="views Coverage Results" MODIFIED="1555490276249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mysite/main" />
+-    <SUITE FILE_PATH="coverage/SEP_Project$signUp.coverage" NAME="signUp Coverage Results" MODIFIED="1558941919709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+-    <SUITE FILE_PATH="coverage/SEP_Project$SignIn.coverage" NAME="SignIn Coverage Results" MODIFIED="1558942026212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+     <SUITE FILE_PATH="coverage/Parcel$sign.coverage" NAME="sign Coverage Results" MODIFIED="1554275928638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+     <SUITE FILE_PATH="coverage/Parcel$sign__1_.coverage" NAME="sign (1) Coverage Results" MODIFIED="1554276218150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+   </component>
+   <component name="FileEditorManager">
+     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+-      <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/venv/Customer.py">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="187">
+-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+-      <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/venv/MySql.py">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="34">
+-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+-              <folding>
+-                <element signature="e#0#9#0" expanded="true" />
+-              </folding>
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+       <file pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/venv/signUp.py">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="425">
+-              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+-      <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/venv/SignIn.py">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="325">
+-              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+-      <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/venv/sign.py">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="187">
+-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+-            </state>
+-          </provider>
+-        </entry>
+-      </file>
+-      <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/venv/Sinnn.py">
+-          <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="216">
+-              <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
++            <state relative-caret-position="68">
++              <caret line="4" selection-start-line="4" selection-end-line="4" />
+             </state>
+           </provider>
+         </entry>
+@@ -94,59 +44,34 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
+-    <option name="UPDATE_TYPE" value="MERGE" />
++    <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="IdeDocumentHistory">
+     <option name="CHANGED_PATHS">
+       <list>
+         <option value="$PROJECT_DIR$/sign.py" />
+-        <option value="$PROJECT_DIR$/mysite/mysite/urls.py" />
+-        <option value="$PROJECT_DIR$/mysite/main/urls.py" />
+-        <option value="$PROJECT_DIR$/mysite/main/views.py" />
+-        <option value="$PROJECT_DIR$/mysite/main/models.py" />
+-        <option value="$PROJECT_DIR$/venv/Customer.py" />
+-        <option value="$PROJECT_DIR$/venv/Scripts/__init__.py" />
+-        <option value="$PROJECT_DIR$/venv/MySql.py" />
+-        <option value="$PROJECT_DIR$/venv/testdatabase.py" />
+         <option value="$PROJECT_DIR$/venv/sign.py" />
+-        <option value="$PROJECT_DIR$/venv/Sinnn.py" />
+-        <option value="$PROJECT_DIR$/venv/signUp.py" />
+-        <option value="$PROJECT_DIR$/venv/SignIn.py" />
+       </list>
+     </option>
+   </component>
+   <component name="ProjectFrameBounds" extendedState="6">
+-    <option name="x" value="-10" />
+-    <option name="y" value="-10" />
+-    <option name="width" value="995" />
+-    <option name="height" value="780" />
++    <option name="x" value="220" />
++    <option name="y" value="120" />
++    <option name="width" value="1750" />
++    <option name="height" value="975" />
+   </component>
+   <component name="ProjectView">
+     <navigator proportions="" version="1">
+       <foldersAlwaysOnTop value="true" />
+     </navigator>
+     <panes>
+-      <pane id="ProjectPane">
+-        <subPane>
+-          <expand>
+-            <path>
+-              <item name="SEP_Project" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="SEP_Project" type="462c0819:PsiDirectoryNode" />
+-            </path>
+-            <path>
+-              <item name="SEP_Project" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="SEP_Project" type="462c0819:PsiDirectoryNode" />
+-              <item name="venv" type="462c0819:PsiDirectoryNode" />
+-            </path>
+-          </expand>
+-          <select />
+-        </subPane>
+-      </pane>
++      <pane id="ProjectPane" />
+       <pane id="Scope" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
++    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+@@ -175,8 +100,8 @@
+       </list>
+     </option>
+   </component>
+-  <component name="RunManager" selected="Python.SignIn">
+-    <configuration name="MySql" type="PythonConfigurationType" factoryName="Python" temporary="true">
++  <component name="RunManager" selected="Python.sign (1)">
++    <configuration name="sign (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+       <module name="Parcel" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -185,11 +110,11 @@
+       </envs>
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+-      <option name="IS_MODULE_SDK" value="false" />
++      <option name="IS_MODULE_SDK" value="true" />
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/MySql.py" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/sign.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -198,7 +123,7 @@
+       <option name="INPUT_FILE" value="" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="SignIn" type="PythonConfigurationType" factoryName="Python" temporary="true">
++    <configuration name="sign (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+       <module name="Parcel" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -206,12 +131,12 @@
+         <env name="PYTHONUNBUFFERED" value="1" />
+       </envs>
+       <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ManUProject" />
+       <option name="IS_MODULE_SDK" value="false" />
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/SignIn.py" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ManUProject/sign.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -220,7 +145,7 @@
+       <option name="INPUT_FILE" value="" />
+       <method v="2" />
+     </configuration>
+-    <configuration name="signUp" type="PythonConfigurationType" factoryName="Python" temporary="true">
++    <configuration name="sign" type="PythonConfigurationType" factoryName="Python" temporary="true">
+       <module name="Parcel" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+@@ -229,55 +154,11 @@
+       </envs>
+       <option name="SDK_HOME" value="" />
+       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+-      <option name="IS_MODULE_SDK" value="false" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/signUp.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="testdatabase" type="PythonConfigurationType" factoryName="Python" temporary="true">
+-      <module name="Parcel" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+-      <option name="IS_MODULE_SDK" value="false" />
+-      <option name="ADD_CONTENT_ROOTS" value="true" />
+-      <option name="ADD_SOURCE_ROOTS" value="true" />
+-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/testdatabase.py" />
+-      <option name="PARAMETERS" value="" />
+-      <option name="SHOW_COMMAND_LINE" value="false" />
+-      <option name="EMULATE_TERMINAL" value="false" />
+-      <option name="MODULE_MODE" value="false" />
+-      <option name="REDIRECT_INPUT" value="false" />
+-      <option name="INPUT_FILE" value="" />
+-      <method v="2" />
+-    </configuration>
+-    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+-      <module name="Parcel" />
+-      <option name="INTERPRETER_OPTIONS" value="" />
+-      <option name="PARENT_ENVS" value="true" />
+-      <envs>
+-        <env name="PYTHONUNBUFFERED" value="1" />
+-      </envs>
+-      <option name="SDK_HOME" value="" />
+-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mysite/main" />
+       <option name="IS_MODULE_SDK" value="true" />
+       <option name="ADD_CONTENT_ROOTS" value="true" />
+       <option name="ADD_SOURCE_ROOTS" value="true" />
+       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mysite/main/views.py" />
++      <option name="SCRIPT_NAME" value="C:\Users\mankk\PycharmProjects\Parcel\venv\sign.py" />
+       <option name="PARAMETERS" value="" />
+       <option name="SHOW_COMMAND_LINE" value="false" />
+       <option name="EMULATE_TERMINAL" value="false" />
+@@ -288,11 +169,9 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Python.SignIn" />
+-        <item itemvalue="Python.signUp" />
+-        <item itemvalue="Python.testdatabase" />
+-        <item itemvalue="Python.MySql" />
+-        <item itemvalue="Python.views" />
++        <item itemvalue="Python.sign (1)" />
++        <item itemvalue="Python.sign (2)" />
++        <item itemvalue="Python.sign" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -307,43 +186,23 @@
+       <option name="presentableId" value="Default" />
+       <updated>1554273267140</updated>
+       <workItem from="1554273273320" duration="2328000" />
+-      <workItem from="1554276711622" duration="1324000" />
+-      <workItem from="1554973759106" duration="15000" />
+-      <workItem from="1555485456947" duration="5068000" />
+-      <workItem from="1555579803358" duration="97000" />
+-      <workItem from="1555944535612" duration="789000" />
+-      <workItem from="1555987422638" duration="1004000" />
+-      <workItem from="1556094062191" duration="3563000" />
+-      <workItem from="1556173629113" duration="6632000" />
+-      <workItem from="1556185340192" duration="71000" />
+-      <workItem from="1556208171982" duration="7024000" />
+-      <workItem from="1558884992083" duration="43000" />
+-      <workItem from="1558939281162" duration="2784000" />
+-    </task>
+-    <task id="LOCAL-00001" summary="ไอนิ้น อย่าขี้เกลียดทำงาน ด้วย">
+-      <created>1554276766427</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1554276766427</updated>
++      <workItem from="1559038839846" duration="609000" />
+     </task>
+-    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="30742000" />
++    <option name="totallyTimeSpent" value="2937000" />
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+-    <editor active="true" />
+     <layout>
+-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19060403" />
++      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25268096" />
+       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+       <window_info id="Favorites" order="2" side_tool="true" />
+       <window_info anchor="bottom" id="Message" order="0" />
+       <window_info anchor="bottom" id="Find" order="1" />
+-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30311614" />
+-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
++      <window_info anchor="bottom" id="Run" order="2" weight="0.30169973" />
++      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+       <window_info anchor="bottom" id="TODO" order="6" />
+@@ -351,8 +210,9 @@
+       <window_info anchor="bottom" id="Version Control" order="8" />
+       <window_info anchor="bottom" id="Database Changes" order="9" />
+       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32577905" />
++      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3580247" />
+       <window_info anchor="bottom" id="Python Console" order="12" />
++      <window_info anchor="right" id="Google Cloud Storage" />
+       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+@@ -362,10 +222,6 @@
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="1" />
+-  </component>
+-  <component name="VcsManagerConfiguration">
+-    <MESSAGE value="ไอนิ้น อย่าขี้เกลียดทำงาน ด้วย" />
+-    <option name="LAST_COMMIT_MESSAGE" value="ไอนิ้น อย่าขี้เกลียดทำงาน ด้วย" />
+   </component>
+   <component name="editorHistoryManager">
+     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/firebase_admin/credentials.py">
+@@ -375,126 +231,11 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/../ManUProject/sign.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="51">
+-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+-          <folding>
+-            <element signature="e#0#21#0" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-884" />
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/mysite/manage.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state>
+-          <caret column="5" selection-start-column="5" selection-end-column="5" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/mysite/main/urls.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="340">
+-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+-          <folding>
+-            <element signature="e#631#659#0" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/mysite/main/views.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="102">
+-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+-          <folding>
+-            <element signature="e#0#35#0" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/mysite/mysite/urls.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="306">
+-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+-          <folding>
+-            <element signature="e#630#662#0" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/mysite/main/models.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="136">
+-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/venv/Number_Generater.py">
+-      <provider selected="true" editor-type-id="text-editor" />
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/venv/Scripts/__init__.py" />
+-    <entry file="file://$USER_HOME$/PycharmProjects/Parcel/venv/Lib/site-packages/mysql/connector/connection.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="235">
+-          <caret line="447" lean-forward="true" selection-start-line="447" selection-end-line="447" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/venv/testdatabase.py" />
+-    <entry file="file://$PROJECT_DIR$/venv/Customer.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="187">
+-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/venv/MySql.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="34">
+-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+-          <folding>
+-            <element signature="e#0#9#0" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/codecs.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="278">
+-          <caret line="332" selection-start-line="332" selection-end-line="332" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/venv/Sinnn.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="216">
+-          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+-        </state>
+-      </provider>
+-    </entry>
++    <entry file="file://$PROJECT_DIR$/../ManUProject/sign.py" />
+     <entry file="file://$PROJECT_DIR$/venv/sign.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="187">
+-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/venv/SignIn.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="325">
+-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/venv/signUp.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="425">
+-          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
++        <state relative-caret-position="68">
++          <caret line="4" selection-start-line="4" selection-end-line="4" />
+         </state>
+       </provider>
+     </entry>
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_5_26_2019_3_27_PM__Default_Changelist_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><changelist name=\"Uncommitted_changes_before_Update_at_5_26_2019_3_27_PM_[Default_Changelist]\" date=\"1558859260401\" recycled=\"true\">\r\n  <option name=\"PATH\" value=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_26_2019_3_27_PM_[Default_Changelist]/shelved.patch\" />\r\n  <option name=\"DESCRIPTION\" value=\"Uncommitted changes before Update at 5/26/2019 3:27 PM [Default Changelist]\" />\r\n</changelist>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_5_26_2019_3_27_PM__Default_Changelist_.xml	(revision 62293eb1ecf6c2044f34959373a7ff7dbd010da7)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_5_26_2019_3_27_PM__Default_Changelist_.xml	(date 1559196217546)
+Index: UI/SignUp.ui
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ui version=\"4.0\">\r\n <class>Form</class>\r\n <widget class=\"QWidget\" name=\"Form\">\r\n  <property name=\"geometry\">\r\n   <rect>\r\n    <x>0</x>\r\n    <y>0</y>\r\n    <width>786</width>\r\n    <height>600</height>\r\n   </rect>\r\n  </property>\r\n  <property name=\"windowTitle\">\r\n   <string>Form</string>\r\n  </property>\r\n  <widget class=\"QLabel\" name=\"bg\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>0</x>\r\n     <y>0</y>\r\n     <width>811</width>\r\n     <height>601</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"styleSheet\">\r\n    <string notr=\"true\">QLabel{background: papayawhip;}</string>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string/>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLabel\" name=\"text\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>160</x>\r\n     <y>60</y>\r\n     <width>461</width>\r\n     <height>71</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n     <pointsize>28</pointsize>\r\n     <weight>75</weight>\r\n     <italic>true</italic>\r\n     <bold>true</bold>\r\n    </font>\r\n   </property>\r\n   <property name=\"styleSheet\">\r\n    <string notr=\"true\">QLabel{color:lightslategrey;}\r\n</string>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>Welcome to Parcel Express' Family!</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QCheckBox\" name=\"Mr\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>100</x>\r\n     <y>230</y>\r\n     <width>41</width>\r\n     <height>20</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>Mr.</string>\r\n   </property>\r\n   <attribute name=\"buttonGroup\">\r\n    <string notr=\"true\">buttonGroup</string>\r\n   </attribute>\r\n  </widget>\r\n  <widget class=\"QCheckBox\" name=\"Mrs\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>180</x>\r\n     <y>230</y>\r\n     <width>51</width>\r\n     <height>20</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>Mrs.</string>\r\n   </property>\r\n   <attribute name=\"buttonGroup\">\r\n    <string notr=\"true\">buttonGroup</string>\r\n   </attribute>\r\n  </widget>\r\n  <widget class=\"QRadioButton\" name=\"driver_button\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>340</x>\r\n     <y>470</y>\r\n     <width>100</width>\r\n     <height>20</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>Driver</string>\r\n   </property>\r\n   <attribute name=\"buttonGroup\">\r\n    <string notr=\"true\">buttonGroup_2</string>\r\n   </attribute>\r\n  </widget>\r\n  <widget class=\"QRadioButton\" name=\"admin_button\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>340</x>\r\n     <y>430</y>\r\n     <width>100</width>\r\n     <height>20</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>Admin</string>\r\n   </property>\r\n   <attribute name=\"buttonGroup\">\r\n    <string notr=\"true\">buttonGroup_2</string>\r\n   </attribute>\r\n  </widget>\r\n  <widget class=\"QCommandLinkButton\" name=\"done\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>650</x>\r\n     <y>530</y>\r\n     <width>91</width>\r\n     <height>41</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n     <pointsize>12</pointsize>\r\n     <weight>75</weight>\r\n     <bold>true</bold>\r\n    </font>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>DONE</string>\r\n   </property>\r\n   <property name=\"icon\">\r\n    <iconset>\r\n     <normaloff>shipping.png</normaloff>shipping.png</iconset>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLabel\" name=\"admin_pic\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>410</x>\r\n     <y>420</y>\r\n     <width>51</width>\r\n     <height>41</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string/>\r\n   </property>\r\n   <property name=\"pixmap\">\r\n    <pixmap>Admin-staff-women-1-33jyeega3zzf8zdve4wxz4 copy 2.png</pixmap>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLabel\" name=\"driver_pic\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>430</x>\r\n     <y>460</y>\r\n     <width>31</width>\r\n     <height>41</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string/>\r\n   </property>\r\n   <property name=\"pixmap\">\r\n    <pixmap>delivery-man-driver-pngrepo-com copy 3.png</pixmap>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"lineEdit\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>250</x>\r\n     <y>230</y>\r\n     <width>121</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"alignment\">\r\n    <set>Qt::AlignCenter</set>\r\n   </property>\r\n   <property name=\"placeholderText\">\r\n    <string>firstname</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"lineEdit_2\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>410</x>\r\n     <y>230</y>\r\n     <width>161</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"alignment\">\r\n    <set>Qt::AlignCenter</set>\r\n   </property>\r\n   <property name=\"placeholderText\">\r\n    <string>lastname</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"lineEdit_3\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>310</x>\r\n     <y>290</y>\r\n     <width>191</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"alignment\">\r\n    <set>Qt::AlignCenter</set>\r\n   </property>\r\n   <property name=\"placeholderText\">\r\n    <string>province</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"lineEdit_4\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>240</x>\r\n     <y>350</y>\r\n     <width>151</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"alignment\">\r\n    <set>Qt::AlignCenter</set>\r\n   </property>\r\n   <property name=\"placeholderText\">\r\n    <string>phone number</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"lineEdit_5\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>430</x>\r\n     <y>350</y>\r\n     <width>151</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"alignment\">\r\n    <set>Qt::AlignCenter</set>\r\n   </property>\r\n   <property name=\"placeholderText\">\r\n    <string>email</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"lineEdit_6\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>220</x>\r\n     <y>170</y>\r\n     <width>141</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"alignment\">\r\n    <set>Qt::AlignCenter</set>\r\n   </property>\r\n   <property name=\"placeholderText\">\r\n    <string>username</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"lineEdit_7\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>410</x>\r\n     <y>170</y>\r\n     <width>161</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"alignment\">\r\n    <set>Qt::AlignCenter</set>\r\n   </property>\r\n   <property name=\"placeholderText\">\r\n    <string>password</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QCheckBox\" name=\"Ms_2\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>140</x>\r\n     <y>230</y>\r\n     <width>51</width>\r\n     <height>20</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>Ms.</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLabel\" name=\"label\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>600</x>\r\n     <y>70</y>\r\n     <width>61</width>\r\n     <height>51</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string/>\r\n   </property>\r\n   <property name=\"pixmap\">\r\n    <pixmap>purepng.com-white-paper-planpaper-planeaeroplanepaper-gliderpaper-dartaircraftfolded-paperpaperboardclipart-1421526588176couen copy 2.png</pixmap>\r\n   </property>\r\n  </widget>\r\n </widget>\r\n <resources/>\r\n <connections/>\r\n <buttongroups>\r\n  <buttongroup name=\"buttonGroup_2\"/>\r\n  <buttongroup name=\"buttonGroup\"/>\r\n </buttongroups>\r\n</ui>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- UI/SignUp.ui	(revision 62293eb1ecf6c2044f34959373a7ff7dbd010da7)
++++ UI/SignUp.ui	(date 1559040322504)
+@@ -32,16 +32,16 @@
+   <widget class="QLabel" name="text">
+    <property name="geometry">
+     <rect>
+-     <x>160</x>
+-     <y>60</y>
+-     <width>461</width>
++     <x>130</x>
++     <y>90</y>
++     <width>521</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Georgia</family>
+-     <pointsize>28</pointsize>
++     <pointsize>16</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+@@ -144,13 +144,13 @@
+     <rect>
+      <x>650</x>
+      <y>530</y>
+-     <width>91</width>
++     <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+-     <family>Georgia</family>
++     <family>Segoe UI</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+@@ -364,8 +364,8 @@
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+-     <x>600</x>
+-     <y>70</y>
++     <x>620</x>
++     <y>90</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+Index: UI/SignUp_user.ui
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ui version=\"4.0\">\r\n <class>Form</class>\r\n <widget class=\"QWidget\" name=\"Form\">\r\n  <property name=\"geometry\">\r\n   <rect>\r\n    <x>0</x>\r\n    <y>0</y>\r\n    <width>800</width>\r\n    <height>600</height>\r\n   </rect>\r\n  </property>\r\n  <property name=\"windowTitle\">\r\n   <string>Form</string>\r\n  </property>\r\n  <widget class=\"QLabel\" name=\"bg\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>0</x>\r\n     <y>0</y>\r\n     <width>801</width>\r\n     <height>601</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"styleSheet\">\r\n    <string notr=\"true\">QLabel{background: papayawhip;}</string>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string/>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLabel\" name=\"text\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>270</x>\r\n     <y>70</y>\r\n     <width>191</width>\r\n     <height>71</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n     <pointsize>28</pointsize>\r\n     <weight>75</weight>\r\n     <italic>true</italic>\r\n     <bold>true</bold>\r\n    </font>\r\n   </property>\r\n   <property name=\"styleSheet\">\r\n    <string notr=\"true\">QLabel{color:lightslategrey;}\r\n</string>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>Let's Sign Up!</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLabel\" name=\"label\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>440</x>\r\n     <y>70</y>\r\n     <width>81</width>\r\n     <height>61</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string/>\r\n   </property>\r\n   <property name=\"pixmap\">\r\n    <pixmap>purepng.com-white-paper-planpaper-planeaeroplanepaper-gliderpaper-dartaircraftfolded-paperpaperboardclipart-1421526588176couen copy 2.png</pixmap>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"lineEdit_3\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>310</x>\r\n     <y>290</y>\r\n     <width>191</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"alignment\">\r\n    <set>Qt::AlignCenter</set>\r\n   </property>\r\n   <property name=\"placeholderText\">\r\n    <string>province</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"lineEdit_4\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>190</x>\r\n     <y>350</y>\r\n     <width>151</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"alignment\">\r\n    <set>Qt::AlignCenter</set>\r\n   </property>\r\n   <property name=\"placeholderText\">\r\n    <string>phone number</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"lineEdit_6\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>220</x>\r\n     <y>170</y>\r\n     <width>141</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"alignment\">\r\n    <set>Qt::AlignCenter</set>\r\n   </property>\r\n   <property name=\"placeholderText\">\r\n    <string>username</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QCheckBox\" name=\"Mrs\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>180</x>\r\n     <y>230</y>\r\n     <width>51</width>\r\n     <height>20</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>Mrs.</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"lineEdit_2\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>410</x>\r\n     <y>230</y>\r\n     <width>161</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"alignment\">\r\n    <set>Qt::AlignCenter</set>\r\n   </property>\r\n   <property name=\"placeholderText\">\r\n    <string>lastname</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"lineEdit\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>250</x>\r\n     <y>230</y>\r\n     <width>121</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"alignment\">\r\n    <set>Qt::AlignCenter</set>\r\n   </property>\r\n   <property name=\"placeholderText\">\r\n    <string>firstname</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QCheckBox\" name=\"Mr\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>100</x>\r\n     <y>230</y>\r\n     <width>41</width>\r\n     <height>20</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>Mr.</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"lineEdit_5\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>470</x>\r\n     <y>350</y>\r\n     <width>151</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"alignment\">\r\n    <set>Qt::AlignCenter</set>\r\n   </property>\r\n   <property name=\"placeholderText\">\r\n    <string>email</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QCheckBox\" name=\"Ms_2\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>140</x>\r\n     <y>230</y>\r\n     <width>51</width>\r\n     <height>20</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>Ms.</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLineEdit\" name=\"lineEdit_7\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>410</x>\r\n     <y>170</y>\r\n     <width>161</width>\r\n     <height>31</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n    </font>\r\n   </property>\r\n   <property name=\"alignment\">\r\n    <set>Qt::AlignCenter</set>\r\n   </property>\r\n   <property name=\"placeholderText\">\r\n    <string>password</string>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QCommandLinkButton\" name=\"done\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>690</x>\r\n     <y>530</y>\r\n     <width>91</width>\r\n     <height>41</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"font\">\r\n    <font>\r\n     <family>Georgia</family>\r\n     <pointsize>12</pointsize>\r\n     <weight>75</weight>\r\n     <bold>true</bold>\r\n    </font>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string>DONE</string>\r\n   </property>\r\n   <property name=\"icon\">\r\n    <iconset>\r\n     <normaloff>shipping.png</normaloff>shipping.png</iconset>\r\n   </property>\r\n  </widget>\r\n  <widget class=\"QLabel\" name=\"label_2\">\r\n   <property name=\"geometry\">\r\n    <rect>\r\n     <x>120</x>\r\n     <y>320</y>\r\n     <width>591</width>\r\n     <height>261</height>\r\n    </rect>\r\n   </property>\r\n   <property name=\"text\">\r\n    <string/>\r\n   </property>\r\n   <property name=\"pixmap\">\r\n    <pixmap>location_png_811383 copy 2.png</pixmap>\r\n   </property>\r\n  </widget>\r\n  <zorder>bg</zorder>\r\n  <zorder>label_2</zorder>\r\n  <zorder>text</zorder>\r\n  <zorder>label</zorder>\r\n  <zorder>lineEdit_3</zorder>\r\n  <zorder>lineEdit_4</zorder>\r\n  <zorder>lineEdit_6</zorder>\r\n  <zorder>Mrs</zorder>\r\n  <zorder>lineEdit_2</zorder>\r\n  <zorder>lineEdit</zorder>\r\n  <zorder>Mr</zorder>\r\n  <zorder>lineEdit_5</zorder>\r\n  <zorder>Ms_2</zorder>\r\n  <zorder>lineEdit_7</zorder>\r\n  <zorder>done</zorder>\r\n </widget>\r\n <resources/>\r\n <connections/>\r\n</ui>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- UI/SignUp_user.ui	(revision 62293eb1ecf6c2044f34959373a7ff7dbd010da7)
++++ UI/SignUp_user.ui	(date 1559039002520)
+@@ -32,9 +32,9 @@
+   <widget class="QLabel" name="text">
+    <property name="geometry">
+     <rect>
+-     <x>270</x>
++     <x>200</x>
+      <y>70</y>
+-     <width>191</width>
++     <width>371</width>
+      <height>71</height>
+     </rect>
+    </property>
+@@ -58,8 +58,8 @@
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+-     <x>440</x>
+-     <y>70</y>
++     <x>540</x>
++     <y>80</y>
+      <width>81</width>
+      <height>61</height>
+     </rect>
+@@ -275,15 +275,15 @@
+   <widget class="QCommandLinkButton" name="done">
+    <property name="geometry">
+     <rect>
+-     <x>690</x>
++     <x>670</x>
+      <y>530</y>
+-     <width>91</width>
++     <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+-     <family>Georgia</family>
++     <family>Segoe UI</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+Index: UI/SignUp.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># -*- coding: utf-8 -*-\r\n\r\n# Form implementation generated from reading ui file 'SignUp.ui',\r\n# licensing of 'SignUp.ui' applies.\r\n#\r\n# Created: Sun May 26 17:56:14 2019\r\n#      by: pyside2-uic  running on PySide2 5.12.0\r\n#\r\n# WARNING! All changes made in this file will be lost!\r\n\r\nfrom PySide2 import QtCore, QtGui, QtWidgets\r\n\r\nclass Ui_Form(object):\r\n    def setupUi(self, Form):\r\n        Form.setObjectName(\"Form\")\r\n        Form.resize(786, 600)\r\n        self.bg = QtWidgets.QLabel(Form)\r\n        self.bg.setGeometry(QtCore.QRect(-10, 0, 811, 601))\r\n        self.bg.setStyleSheet(\"QLabel{background: papayawhip;}\")\r\n        self.bg.setText(\"\")\r\n        self.bg.setObjectName(\"bg\")\r\n        self.text = QtWidgets.QLabel(Form)\r\n        self.text.setGeometry(QtCore.QRect(230, 40, 371, 71))\r\n        font = QtGui.QFont()\r\n        font.setFamily(\"Georgia\")\r\n        font.setPointSize(28)\r\n        font.setWeight(75)\r\n        font.setItalic(True)\r\n        font.setBold(True)\r\n        self.text.setFont(font)\r\n        self.text.setStyleSheet(\"QLabel{color:lightslategrey;}\\n\"\r\n\"\")\r\n        self.text.setObjectName(\"text\")\r\n        self.Mr = QtWidgets.QCheckBox(Form)\r\n        self.Mr.setGeometry(QtCore.QRect(80, 160, 41, 20))\r\n        self.Mr.setObjectName(\"Mr\")\r\n        self.buttonGroup = QtWidgets.QButtonGroup(Form)\r\n        self.buttonGroup.setObjectName(\"buttonGroup\")\r\n        self.buttonGroup.addButton(self.Mr)\r\n        self.Ms = QtWidgets.QCheckBox(Form)\r\n        self.Ms.setGeometry(QtCore.QRect(120, 160, 51, 20))\r\n        self.Ms.setObjectName(\"Ms\")\r\n        self.buttonGroup.addButton(self.Ms)\r\n        self.Mrs = QtWidgets.QCheckBox(Form)\r\n        self.Mrs.setGeometry(QtCore.QRect(160, 160, 51, 20))\r\n        self.Mrs.setObjectName(\"Mrs\")\r\n        self.buttonGroup.addButton(self.Mrs)\r\n        self.driver_button = QtWidgets.QRadioButton(Form)\r\n        self.driver_button.setGeometry(QtCore.QRect(350, 440, 100, 20))\r\n        self.driver_button.setObjectName(\"driver_button\")\r\n        self.buttonGroup_2 = QtWidgets.QButtonGroup(Form)\r\n        self.buttonGroup_2.setObjectName(\"buttonGroup_2\")\r\n        self.buttonGroup_2.addButton(self.driver_button)\r\n        self.admin_button = QtWidgets.QRadioButton(Form)\r\n        self.admin_button.setGeometry(QtCore.QRect(350, 400, 100, 20))\r\n        self.admin_button.setObjectName(\"admin_button\")\r\n        self.buttonGroup_2.addButton(self.admin_button)\r\n        self.user_button = QtWidgets.QRadioButton(Form)\r\n        self.user_button.setGeometry(QtCore.QRect(350, 480, 100, 20))\r\n        self.user_button.setObjectName(\"user_button\")\r\n        self.buttonGroup_2.addButton(self.user_button)\r\n        self.done = QtWidgets.QCommandLinkButton(Form)\r\n        self.done.setGeometry(QtCore.QRect(650, 540, 111, 41))\r\n        font = QtGui.QFont()\r\n        font.setFamily(\"Segoe UI\")\r\n        font.setPointSize(12)\r\n        font.setWeight(75)\r\n        font.setBold(True)\r\n        self.done.setFont(font)\r\n        icon = QtGui.QIcon()\r\n        icon.addPixmap(QtGui.QPixmap(\"shipping.png\"), QtGui.QIcon.Normal, QtGui.QIcon.Off)\r\n        self.done.setIcon(icon)\r\n        self.done.setObjectName(\"done\")\r\n        self.admin_pic = QtWidgets.QLabel(Form)\r\n        self.admin_pic.setGeometry(QtCore.QRect(420, 390, 51, 41))\r\n        self.admin_pic.setText(\"\")\r\n        self.admin_pic.setPixmap(QtGui.QPixmap(\"Admin-staff-women-1-33jyeega3zzf8zdve4wxz4 copy 2.png\"))\r\n        self.admin_pic.setObjectName(\"admin_pic\")\r\n        self.driver_pic = QtWidgets.QLabel(Form)\r\n        self.driver_pic.setGeometry(QtCore.QRect(440, 430, 31, 41))\r\n        self.driver_pic.setText(\"\")\r\n        self.driver_pic.setPixmap(QtGui.QPixmap(\"delivery-man-driver-pngrepo-com copy 3.png\"))\r\n        self.driver_pic.setObjectName(\"driver_pic\")\r\n        self.user_pic = QtWidgets.QLabel(Form)\r\n        self.user_pic.setGeometry(QtCore.QRect(420, 470, 61, 41))\r\n        self.user_pic.setText(\"\")\r\n        self.user_pic.setPixmap(QtGui.QPixmap(\"users copy 2.png\"))\r\n        self.user_pic.setObjectName(\"user_pic\")\r\n        self.firstname_2 = QtWidgets.QLineEdit(Form)\r\n        self.firstname_2.setGeometry(QtCore.QRect(230, 160, 141, 31))\r\n        self.firstname_2.setStyleSheet(\"QPlainTextEdit{color:grey;}\\n\"\r\n\"\")\r\n        self.firstname_2.setInputMask(\"\")\r\n        self.firstname_2.setText(\"\")\r\n        self.firstname_2.setObjectName(\"firstname_2\")\r\n        self.firstname_3 = QtWidgets.QLineEdit(Form)\r\n        self.firstname_3.setGeometry(QtCore.QRect(410, 160, 141, 31))\r\n        self.firstname_3.setStyleSheet(\"QPlainTextEdit{color:grey;}\\n\"\r\n\"\")\r\n        self.firstname_3.setInputMask(\"\")\r\n        self.firstname_3.setText(\"\")\r\n        self.firstname_3.setObjectName(\"firstname_3\")\r\n        self.firstname_4 = QtWidgets.QLineEdit(Form)\r\n        self.firstname_4.setGeometry(QtCore.QRect(230, 230, 191, 31))\r\n        self.firstname_4.setStyleSheet(\"QPlainTextEdit{color:grey;}\\n\"\r\n\"\")\r\n        self.firstname_4.setInputMask(\"\")\r\n        self.firstname_4.setText(\"\")\r\n        self.firstname_4.setObjectName(\"firstname_4\")\r\n        self.firstname_5 = QtWidgets.QLineEdit(Form)\r\n        self.firstname_5.setGeometry(QtCore.QRect(230, 300, 141, 31))\r\n        self.firstname_5.setStyleSheet(\"QPlainTextEdit{color:grey;}\\n\"\r\n\"\")\r\n        self.firstname_5.setInputMask(\"\")\r\n        self.firstname_5.setText(\"\")\r\n        self.firstname_5.setObjectName(\"firstname_5\")\r\n        self.firstname_6 = QtWidgets.QLineEdit(Form)\r\n        self.firstname_6.setGeometry(QtCore.QRect(410, 300, 141, 31))\r\n        self.firstname_6.setStyleSheet(\"QPlainTextEdit{color:grey;}\\n\"\r\n\"\")\r\n        self.firstname_6.setInputMask(\"\")\r\n        self.firstname_6.setText(\"\")\r\n        self.firstname_6.setObjectName(\"firstname_6\")\r\n\r\n        self.retranslateUi(Form)\r\n        QtCore.QMetaObject.connectSlotsByName(Form)\r\n\r\n    def retranslateUi(self, Form):\r\n        Form.setWindowTitle(QtWidgets.QApplication.translate(\"Form\", \"Form\", None, -1))\r\n        self.text.setText(QtWidgets.QApplication.translate(\"Form\", \"Let\\'s Sign Up!\", None, -1))\r\n        self.Mr.setText(QtWidgets.QApplication.translate(\"Form\", \"Mr.\", None, -1))\r\n        self.Ms.setText(QtWidgets.QApplication.translate(\"Form\", \"Ms.\", None, -1))\r\n        self.Mrs.setText(QtWidgets.QApplication.translate(\"Form\", \"Mrs.\", None, -1))\r\n        self.driver_button.setText(QtWidgets.QApplication.translate(\"Form\", \"Driver\", None, -1))\r\n        self.admin_button.setText(QtWidgets.QApplication.translate(\"Form\", \"Admin\", None, -1))\r\n        self.user_button.setText(QtWidgets.QApplication.translate(\"Form\", \"User\", None, -1))\r\n        self.done.setText(QtWidgets.QApplication.translate(\"Form\", \"DONE\", None, -1))\r\n        self.firstname_2.setPlaceholderText(QtWidgets.QApplication.translate(\"Form\", \"firstname\", None, -1))\r\n        self.firstname_3.setPlaceholderText(QtWidgets.QApplication.translate(\"Form\", \"lastname\", None, -1))\r\n        self.firstname_4.setPlaceholderText(QtWidgets.QApplication.translate(\"Form\", \"id number/ passport number \", None, -1))\r\n        self.firstname_5.setPlaceholderText(QtWidgets.QApplication.translate(\"Form\", \"phone number\", None, -1))\r\n        self.firstname_6.setPlaceholderText(QtWidgets.QApplication.translate(\"Form\", \"email\", None, -1))\r\n\r\n\r\nif __name__ == \"__main__\":\r\n    import sys\r\n    app = QtWidgets.QApplication(sys.argv)\r\n    Form = QtWidgets.QWidget()\r\n    ui = Ui_Form()\r\n    ui.setupUi(Form)\r\n    Form.show()\r\n    sys.exit(app.exec_())\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- UI/SignUp.py	(revision 62293eb1ecf6c2044f34959373a7ff7dbd010da7)
++++ UI/SignUp.py	(date 1559040836466)
+@@ -3,7 +3,7 @@
+ # Form implementation generated from reading ui file 'SignUp.ui',
+ # licensing of 'SignUp.ui' applies.
+ #
+-# Created: Sun May 26 17:56:14 2019
++# Created: Tue May 28 17:53:56 2019
+ #      by: pyside2-uic  running on PySide2 5.12.0
+ #
+ # WARNING! All changes made in this file will be lost!
+@@ -15,15 +15,15 @@
+         Form.setObjectName("Form")
+         Form.resize(786, 600)
+         self.bg = QtWidgets.QLabel(Form)
+-        self.bg.setGeometry(QtCore.QRect(-10, 0, 811, 601))
++        self.bg.setGeometry(QtCore.QRect(0, 0, 811, 601))
+         self.bg.setStyleSheet("QLabel{background: papayawhip;}")
+         self.bg.setText("")
+         self.bg.setObjectName("bg")
+         self.text = QtWidgets.QLabel(Form)
+-        self.text.setGeometry(QtCore.QRect(230, 40, 371, 71))
++        self.text.setGeometry(QtCore.QRect(130, 90, 521, 71))
+         font = QtGui.QFont()
+         font.setFamily("Georgia")
+-        font.setPointSize(28)
++        font.setPointSize(16)
+         font.setWeight(75)
+         font.setItalic(True)
+         font.setBold(True)
+@@ -32,35 +32,39 @@
+ "")
+         self.text.setObjectName("text")
+         self.Mr = QtWidgets.QCheckBox(Form)
+-        self.Mr.setGeometry(QtCore.QRect(80, 160, 41, 20))
++        self.Mr.setGeometry(QtCore.QRect(100, 230, 41, 20))
++        font = QtGui.QFont()
++        font.setFamily("Georgia")
++        self.Mr.setFont(font)
+         self.Mr.setObjectName("Mr")
+         self.buttonGroup = QtWidgets.QButtonGroup(Form)
+         self.buttonGroup.setObjectName("buttonGroup")
+         self.buttonGroup.addButton(self.Mr)
+-        self.Ms = QtWidgets.QCheckBox(Form)
+-        self.Ms.setGeometry(QtCore.QRect(120, 160, 51, 20))
+-        self.Ms.setObjectName("Ms")
+-        self.buttonGroup.addButton(self.Ms)
+         self.Mrs = QtWidgets.QCheckBox(Form)
+-        self.Mrs.setGeometry(QtCore.QRect(160, 160, 51, 20))
++        self.Mrs.setGeometry(QtCore.QRect(180, 230, 51, 20))
++        font = QtGui.QFont()
++        font.setFamily("Georgia")
++        self.Mrs.setFont(font)
+         self.Mrs.setObjectName("Mrs")
+         self.buttonGroup.addButton(self.Mrs)
+         self.driver_button = QtWidgets.QRadioButton(Form)
+-        self.driver_button.setGeometry(QtCore.QRect(350, 440, 100, 20))
++        self.driver_button.setGeometry(QtCore.QRect(340, 470, 100, 20))
++        font = QtGui.QFont()
++        font.setFamily("Georgia")
++        self.driver_button.setFont(font)
+         self.driver_button.setObjectName("driver_button")
+         self.buttonGroup_2 = QtWidgets.QButtonGroup(Form)
+         self.buttonGroup_2.setObjectName("buttonGroup_2")
+         self.buttonGroup_2.addButton(self.driver_button)
+         self.admin_button = QtWidgets.QRadioButton(Form)
+-        self.admin_button.setGeometry(QtCore.QRect(350, 400, 100, 20))
++        self.admin_button.setGeometry(QtCore.QRect(340, 430, 100, 20))
++        font = QtGui.QFont()
++        font.setFamily("Georgia")
++        self.admin_button.setFont(font)
+         self.admin_button.setObjectName("admin_button")
+         self.buttonGroup_2.addButton(self.admin_button)
+-        self.user_button = QtWidgets.QRadioButton(Form)
+-        self.user_button.setGeometry(QtCore.QRect(350, 480, 100, 20))
+-        self.user_button.setObjectName("user_button")
+-        self.buttonGroup_2.addButton(self.user_button)
+         self.done = QtWidgets.QCommandLinkButton(Form)
+-        self.done.setGeometry(QtCore.QRect(650, 540, 111, 41))
++        self.done.setGeometry(QtCore.QRect(650, 530, 101, 41))
+         font = QtGui.QFont()
+         font.setFamily("Segoe UI")
+         font.setPointSize(12)
+@@ -72,74 +76,95 @@
+         self.done.setIcon(icon)
+         self.done.setObjectName("done")
+         self.admin_pic = QtWidgets.QLabel(Form)
+-        self.admin_pic.setGeometry(QtCore.QRect(420, 390, 51, 41))
++        self.admin_pic.setGeometry(QtCore.QRect(410, 420, 51, 41))
+         self.admin_pic.setText("")
+         self.admin_pic.setPixmap(QtGui.QPixmap("Admin-staff-women-1-33jyeega3zzf8zdve4wxz4 copy 2.png"))
+         self.admin_pic.setObjectName("admin_pic")
+         self.driver_pic = QtWidgets.QLabel(Form)
+-        self.driver_pic.setGeometry(QtCore.QRect(440, 430, 31, 41))
++        self.driver_pic.setGeometry(QtCore.QRect(430, 460, 31, 41))
+         self.driver_pic.setText("")
+         self.driver_pic.setPixmap(QtGui.QPixmap("delivery-man-driver-pngrepo-com copy 3.png"))
+         self.driver_pic.setObjectName("driver_pic")
+-        self.user_pic = QtWidgets.QLabel(Form)
+-        self.user_pic.setGeometry(QtCore.QRect(420, 470, 61, 41))
+-        self.user_pic.setText("")
+-        self.user_pic.setPixmap(QtGui.QPixmap("users copy 2.png"))
+-        self.user_pic.setObjectName("user_pic")
+-        self.firstname_2 = QtWidgets.QLineEdit(Form)
+-        self.firstname_2.setGeometry(QtCore.QRect(230, 160, 141, 31))
+-        self.firstname_2.setStyleSheet("QPlainTextEdit{color:grey;}\n"
+-"")
+-        self.firstname_2.setInputMask("")
+-        self.firstname_2.setText("")
+-        self.firstname_2.setObjectName("firstname_2")
+-        self.firstname_3 = QtWidgets.QLineEdit(Form)
+-        self.firstname_3.setGeometry(QtCore.QRect(410, 160, 141, 31))
+-        self.firstname_3.setStyleSheet("QPlainTextEdit{color:grey;}\n"
+-"")
+-        self.firstname_3.setInputMask("")
+-        self.firstname_3.setText("")
+-        self.firstname_3.setObjectName("firstname_3")
+-        self.firstname_4 = QtWidgets.QLineEdit(Form)
+-        self.firstname_4.setGeometry(QtCore.QRect(230, 230, 191, 31))
+-        self.firstname_4.setStyleSheet("QPlainTextEdit{color:grey;}\n"
+-"")
+-        self.firstname_4.setInputMask("")
+-        self.firstname_4.setText("")
+-        self.firstname_4.setObjectName("firstname_4")
+-        self.firstname_5 = QtWidgets.QLineEdit(Form)
+-        self.firstname_5.setGeometry(QtCore.QRect(230, 300, 141, 31))
+-        self.firstname_5.setStyleSheet("QPlainTextEdit{color:grey;}\n"
+-"")
+-        self.firstname_5.setInputMask("")
+-        self.firstname_5.setText("")
+-        self.firstname_5.setObjectName("firstname_5")
+-        self.firstname_6 = QtWidgets.QLineEdit(Form)
+-        self.firstname_6.setGeometry(QtCore.QRect(410, 300, 141, 31))
+-        self.firstname_6.setStyleSheet("QPlainTextEdit{color:grey;}\n"
+-"")
+-        self.firstname_6.setInputMask("")
+-        self.firstname_6.setText("")
+-        self.firstname_6.setObjectName("firstname_6")
++        self.lineEdit = QtWidgets.QLineEdit(Form)
++        self.lineEdit.setGeometry(QtCore.QRect(250, 230, 121, 31))
++        font = QtGui.QFont()
++        font.setFamily("Georgia")
++        self.lineEdit.setFont(font)
++        self.lineEdit.setAlignment(QtCore.Qt.AlignCenter)
++        self.lineEdit.setObjectName("lineEdit")
++        self.lineEdit_2 = QtWidgets.QLineEdit(Form)
++        self.lineEdit_2.setGeometry(QtCore.QRect(410, 230, 161, 31))
++        font = QtGui.QFont()
++        font.setFamily("Georgia")
++        self.lineEdit_2.setFont(font)
++        self.lineEdit_2.setAlignment(QtCore.Qt.AlignCenter)
++        self.lineEdit_2.setObjectName("lineEdit_2")
++        self.lineEdit_3 = QtWidgets.QLineEdit(Form)
++        self.lineEdit_3.setGeometry(QtCore.QRect(310, 290, 191, 31))
++        font = QtGui.QFont()
++        font.setFamily("Georgia")
++        self.lineEdit_3.setFont(font)
++        self.lineEdit_3.setAlignment(QtCore.Qt.AlignCenter)
++        self.lineEdit_3.setObjectName("lineEdit_3")
++        self.lineEdit_4 = QtWidgets.QLineEdit(Form)
++        self.lineEdit_4.setGeometry(QtCore.QRect(240, 350, 151, 31))
++        font = QtGui.QFont()
++        font.setFamily("Georgia")
++        self.lineEdit_4.setFont(font)
++        self.lineEdit_4.setAlignment(QtCore.Qt.AlignCenter)
++        self.lineEdit_4.setObjectName("lineEdit_4")
++        self.lineEdit_5 = QtWidgets.QLineEdit(Form)
++        self.lineEdit_5.setGeometry(QtCore.QRect(430, 350, 151, 31))
++        font = QtGui.QFont()
++        font.setFamily("Georgia")
++        self.lineEdit_5.setFont(font)
++        self.lineEdit_5.setAlignment(QtCore.Qt.AlignCenter)
++        self.lineEdit_5.setObjectName("lineEdit_5")
++        self.lineEdit_6 = QtWidgets.QLineEdit(Form)
++        self.lineEdit_6.setGeometry(QtCore.QRect(220, 170, 141, 31))
++        font = QtGui.QFont()
++        font.setFamily("Georgia")
++        self.lineEdit_6.setFont(font)
++        self.lineEdit_6.setAlignment(QtCore.Qt.AlignCenter)
++        self.lineEdit_6.setObjectName("lineEdit_6")
++        self.lineEdit_7 = QtWidgets.QLineEdit(Form)
++        self.lineEdit_7.setGeometry(QtCore.QRect(410, 170, 161, 31))
++        font = QtGui.QFont()
++        font.setFamily("Georgia")
++        self.lineEdit_7.setFont(font)
++        self.lineEdit_7.setAlignment(QtCore.Qt.AlignCenter)
++        self.lineEdit_7.setObjectName("lineEdit_7")
++        self.Ms_2 = QtWidgets.QCheckBox(Form)
++        self.Ms_2.setGeometry(QtCore.QRect(140, 230, 51, 20))
++        font = QtGui.QFont()
++        font.setFamily("Georgia")
++        self.Ms_2.setFont(font)
++        self.Ms_2.setObjectName("Ms_2")
++        self.label = QtWidgets.QLabel(Form)
++        self.label.setGeometry(QtCore.QRect(620, 90, 61, 51))
++        self.label.setText("")
++        self.label.setPixmap(QtGui.QPixmap("purepng.com-white-paper-planpaper-planeaeroplanepaper-gliderpaper-dartaircraftfolded-paperpaperboardclipart-1421526588176couen copy 2.png"))
++        self.label.setObjectName("label")
+ 
+         self.retranslateUi(Form)
+         QtCore.QMetaObject.connectSlotsByName(Form)
+ 
+     def retranslateUi(self, Form):
+         Form.setWindowTitle(QtWidgets.QApplication.translate("Form", "Form", None, -1))
+-        self.text.setText(QtWidgets.QApplication.translate("Form", "Let\'s Sign Up!", None, -1))
++        self.text.setText(QtWidgets.QApplication.translate("Form", "Welcome to Parcel Express\' Family!", None, -1))
+         self.Mr.setText(QtWidgets.QApplication.translate("Form", "Mr.", None, -1))
+-        self.Ms.setText(QtWidgets.QApplication.translate("Form", "Ms.", None, -1))
+         self.Mrs.setText(QtWidgets.QApplication.translate("Form", "Mrs.", None, -1))
+         self.driver_button.setText(QtWidgets.QApplication.translate("Form", "Driver", None, -1))
+         self.admin_button.setText(QtWidgets.QApplication.translate("Form", "Admin", None, -1))
+-        self.user_button.setText(QtWidgets.QApplication.translate("Form", "User", None, -1))
+         self.done.setText(QtWidgets.QApplication.translate("Form", "DONE", None, -1))
+-        self.firstname_2.setPlaceholderText(QtWidgets.QApplication.translate("Form", "firstname", None, -1))
+-        self.firstname_3.setPlaceholderText(QtWidgets.QApplication.translate("Form", "lastname", None, -1))
+-        self.firstname_4.setPlaceholderText(QtWidgets.QApplication.translate("Form", "id number/ passport number ", None, -1))
+-        self.firstname_5.setPlaceholderText(QtWidgets.QApplication.translate("Form", "phone number", None, -1))
+-        self.firstname_6.setPlaceholderText(QtWidgets.QApplication.translate("Form", "email", None, -1))
++        self.lineEdit.setPlaceholderText(QtWidgets.QApplication.translate("Form", "firstname", None, -1))
++        self.lineEdit_2.setPlaceholderText(QtWidgets.QApplication.translate("Form", "lastname", None, -1))
++        self.lineEdit_3.setPlaceholderText(QtWidgets.QApplication.translate("Form", "province", None, -1))
++        self.lineEdit_4.setPlaceholderText(QtWidgets.QApplication.translate("Form", "phone number", None, -1))
++        self.lineEdit_5.setPlaceholderText(QtWidgets.QApplication.translate("Form", "email", None, -1))
++        self.lineEdit_6.setPlaceholderText(QtWidgets.QApplication.translate("Form", "username", None, -1))
++        self.lineEdit_7.setPlaceholderText(QtWidgets.QApplication.translate("Form", "password", None, -1))
++        self.Ms_2.setText(QtWidgets.QApplication.translate("Form", "Ms.", None, -1))
+ 
+ 
+ if __name__ == "__main__":

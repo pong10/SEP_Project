@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'HomePage.ui',
 # licensing of 'HomePage.ui' applies.
 #
-# Created: Sun May 26 14:21:09 2019
+# Created: Tue May 28 17:50:39 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -59,6 +59,8 @@ class Ui_Form(object):
         self.password.setObjectName("password")
         self.password_lineEdit = QtWidgets.QLineEdit(Form)
         self.password_lineEdit.setGeometry(QtCore.QRect(300, 250, 181, 31))
+        self.password_lineEdit.setInputMethodHints(QtCore.Qt.ImhNone)
+        self.password_lineEdit.setEchoMode(QtWidgets.QLineEdit.Password)
         self.password_lineEdit.setObjectName("password_lineEdit")
         self.SignIn = QtWidgets.QPushButton(Form)
         self.SignIn.setGeometry(QtCore.QRect(260, 310, 113, 32))

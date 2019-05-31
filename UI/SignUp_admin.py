@@ -3,17 +3,24 @@
 # Form implementation generated from reading ui file 'SignUp.ui',
 # licensing of 'SignUp.ui' applies.
 #
-# Created: Tue May 28 17:53:56 2019
+# Created: Fri May 31 14:16:03 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
 
 from PySide2 import QtCore, QtGui, QtWidgets
 
-class Ui_Form(object):
+class Ui_Form_SignUp_Admin(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(786, 600)
+        Form.resize(800, 600)
+        Form.setWindowIcon(QtGui.QIcon("860139 copy 2.png"))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(Form.sizePolicy().hasHeightForWidth())
+        Form.setSizePolicy(sizePolicy)
+        Form.setMaximumSize(QtCore.QSize(800, 600))
         self.bg = QtWidgets.QLabel(Form)
         self.bg.setGeometry(QtCore.QRect(0, 0, 811, 601))
         self.bg.setStyleSheet("QLabel{background: papayawhip;}")
@@ -132,6 +139,7 @@ class Ui_Form(object):
         font = QtGui.QFont()
         font.setFamily("Georgia")
         self.lineEdit_7.setFont(font)
+        self.lineEdit_7.setEchoMode(QtWidgets.QLineEdit.Password)
         self.lineEdit_7.setAlignment(QtCore.Qt.AlignCenter)
         self.lineEdit_7.setObjectName("lineEdit_7")
         self.Ms_2 = QtWidgets.QCheckBox(Form)
@@ -145,12 +153,22 @@ class Ui_Form(object):
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap("purepng.com-white-paper-planpaper-planeaeroplanepaper-gliderpaper-dartaircraftfolded-paperpaperboardclipart-1421526588176couen copy 2.png"))
         self.label.setObjectName("label")
+        self.back = QtWidgets.QCommandLinkButton(Form)
+        self.back.setGeometry(QtCore.QRect(50, 530, 101, 41))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(12)
+        font.setWeight(75)
+        font.setBold(True)
+        self.back.setFont(font)
+        self.back.setIcon(icon)
+        self.back.setObjectName("back")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
-        Form.setWindowTitle(QtWidgets.QApplication.translate("Form", "Form", None, -1))
+        Form.setWindowTitle(QtWidgets.QApplication.translate("Form", "SignUp", None, -1))
         self.text.setText(QtWidgets.QApplication.translate("Form", "Welcome to Parcel Express\' Family!", None, -1))
         self.Mr.setText(QtWidgets.QApplication.translate("Form", "Mr.", None, -1))
         self.Mrs.setText(QtWidgets.QApplication.translate("Form", "Mrs.", None, -1))
@@ -165,13 +183,14 @@ class Ui_Form(object):
         self.lineEdit_6.setPlaceholderText(QtWidgets.QApplication.translate("Form", "username", None, -1))
         self.lineEdit_7.setPlaceholderText(QtWidgets.QApplication.translate("Form", "password", None, -1))
         self.Ms_2.setText(QtWidgets.QApplication.translate("Form", "Ms.", None, -1))
+        self.back.setText(QtWidgets.QApplication.translate("Form", "BACK", None, -1))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Form = QtWidgets.QWidget()
-    ui = Ui_Form()
+    ui = Ui_Form_SignUp_Admin()
     ui.setupUi(Form)
     Form.show()
     sys.exit(app.exec_())
