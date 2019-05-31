@@ -1,4 +1,5 @@
 import mysql.connector
+import uuid
 class InValid(Exception): pass
 class SignUp():
     mydb = mysql.connector.connect(
@@ -15,6 +16,13 @@ class SignUp():
     def __init__(self, user, password):
         self.user = user
         self.password = password
+
+    def UserIdCreation(self):
+        front = '000'
+        body = uuid.uuid4().int
+        body=body%10000000
+        code = front+str(body)
+        return code
 
     def UserExist(self):
         if(self.user[0:3]=='Ad_'):# if admin
@@ -52,7 +60,7 @@ class SignUp():
         for x in myresult:
             print(x)
 a=SignUp('Ad_pong','123456')
-a.signUp()
+print(a.UserIdCreation())
 # mycursor.execute("SELECT Username, Password FROM Customer")
 # myresult = mycursor.fetchall()
 #

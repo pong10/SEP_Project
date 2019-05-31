@@ -21,10 +21,14 @@ class Parcel():
     def getstate(self):
         return self.current_state
 
-    def getAllParcel(self,Province):
-        self.mycursor.execute("SELECT currentLocation from Parcel")
+    def getAllParcelFromProvince(self,Province):
+        self.mycursor.execute("SELECT TrackingNumber,currentLocation from Parcel")
+        tracking_number=[]
         myresult = self.mycursor.fetchall()
-        print(myresult)
+        for i,j in myresult:
+            if(j == Province):
+                tracking_number.append(i)
+        return tracking_number
 
     def printstate(self):
         for i in range(0,4):
@@ -32,4 +36,5 @@ class Parcel():
                 break
             else:
                 print(self.state_of_parcel[i])
-t=Parcel("")
+t=Parcel("123456",'Somphon')
+print(t.getAllParcelFromProvince('Chiang_Mai'))
