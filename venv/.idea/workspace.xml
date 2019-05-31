@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39c6259d-2ea9-4396-a1d2-cd8d75581f19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Locker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signUp.py" beforeDir="false" afterPath="$PROJECT_DIR$/signUp.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +21,7 @@
     <SUITE FILE_PATH="coverage/venv$user_enter_tracking.coverage" NAME="user_enter_tracking Coverage Results" MODIFIED="1559303359143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI" />
     <SUITE FILE_PATH="coverage/venv$homepage.coverage" NAME="homepage Coverage Results" MODIFIED="1559320180213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI" />
     <SUITE FILE_PATH="coverage/venv$Admin.coverage" NAME="Admin Coverage Results" MODIFIED="1559317675623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/venv$signUp.coverage" NAME="signUp Coverage Results" MODIFIED="1559319873840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/venv$signUp.coverage" NAME="signUp Coverage Results" MODIFIED="1559322818287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/venv$AdminSignIn_2.coverage" NAME="AdminSignIn_2 Coverage Results" MODIFIED="1559303386883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI" />
   </component>
   <component name="FavoritesManager">
@@ -47,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/signUp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+            <state relative-caret-position="222">
+              <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -141,10 +138,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-222" />
-    <option name="y" value="467" />
-    <option name="width" value="1750" />
-    <option name="height" value="975" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -192,7 +189,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.homepage">
+  <component name="RunManager" selected="Python.signUp">
     <configuration name="Admin" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="venv" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -305,8 +302,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.homepage" />
         <item itemvalue="Python.signUp" />
+        <item itemvalue="Python.homepage" />
         <item itemvalue="Python.Tracking" />
         <item itemvalue="Python.Admin" />
         <item itemvalue="Python.Create_TrackingNumber" />
@@ -332,7 +329,7 @@
       <workItem from="1559218067313" duration="6063000" />
       <workItem from="1559272537593" duration="15151000" />
       <workItem from="1559291313281" duration="92000" />
-      <workItem from="1559291551094" duration="22885000" />
+      <workItem from="1559291551094" duration="26570000" />
     </task>
     <task id="LOCAL-00001" summary="Modify_Driver">
       <created>1559200250314</created>
@@ -352,7 +349,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57041000" />
+    <option name="totallyTimeSpent" value="60726000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -564,8 +561,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/signUp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+        <state relative-caret-position="222">
+          <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
