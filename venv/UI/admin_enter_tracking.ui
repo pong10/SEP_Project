@@ -192,7 +192,7 @@ QPushButton:enabled { color: purple }</string>
   <widget class="QPushButton" name="back">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>20</x>
      <y>540</y>
      <width>91</width>
      <height>41</height>

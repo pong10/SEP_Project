@@ -6,9 +6,33 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>798</width>
+    <width>800</width>
     <height>600</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -21,6 +45,24 @@
      <width>800</width>
      <height>600</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>800</width>
+     <height>600</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>800</width>
+     <height>600</height>
+    </size>
    </property>
    <property name="styleSheet">
     <string notr="true">QLabel{background:lightblue;}
@@ -57,48 +99,13 @@
     <string>Parcel Express</string>
    </property>
   </widget>
-  <widget class="QLabel" name="TrackingNumber">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>120</y>
-     <width>281</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <pointsize>15</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLabel{color:saddlebrown;}
-</string>
-   </property>
-   <property name="text">
-    <string>Tracking number:</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="TrackingNumber_edit">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>160</y>
-     <width>281</width>
-     <height>51</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLabel" name="Information">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>220</y>
-     <width>201</width>
-     <height>21</height>
+     <x>320</x>
+     <y>90</y>
+     <width>181</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -114,14 +121,14 @@
 </string>
    </property>
    <property name="text">
-    <string>Information:</string>
+    <string>Information</string>
    </property>
   </widget>
   <widget class="QLabel" name="Sender">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>250</y>
+     <x>150</x>
+     <y>170</y>
      <width>101</width>
      <height>21</height>
     </rect>
@@ -145,8 +152,8 @@
   <widget class="QLabel" name="Receiver">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>250</y>
+     <x>550</x>
+     <y>170</y>
      <width>121</width>
      <height>21</height>
     </rect>
@@ -167,262 +174,20 @@
     <string>Receiver</string>
    </property>
   </widget>
-  <widget class="QLabel" name="Name">
+  <widget class="QLineEdit" name="Sender_firstname">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>280</y>
-     <width>101</width>
+     <x>40</x>
+     <y>210</y>
+     <width>141</width>
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <pointsize>15</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
+   <property name="inputMask">
+    <string/>
    </property>
-   <property name="styleSheet">
-    <string notr="true">QLabel{color:rosybrown;}
-</string>
-   </property>
-   <property name="text">
-    <string>Name:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="Address">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>320</y>
-     <width>121</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <pointsize>15</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLabel{color:rosybrown;}
-</string>
-   </property>
-   <property name="text">
-    <string>Address:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="ContactNumber">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>400</y>
-     <width>251</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <pointsize>15</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLabel{color:rosybrown;}
-</string>
-   </property>
-   <property name="text">
-    <string>Contact Number:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="ShipmentType">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>450</y>
-     <width>211</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <pointsize>15</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLabel{color:saddlebrown;}
-</string>
-   </property>
-   <property name="text">
-    <string>Shipment type:</string>
-   </property>
-  </widget>
-  <widget class="QRadioButton" name="SameDayExpress">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>480</y>
-     <width>221</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QRadioButton{color:sienna;}
-</string>
-   </property>
-   <property name="text">
-    <string>Same Day Express</string>
-   </property>
-  </widget>
-  <widget class="QRadioButton" name="OS">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>525</y>
-     <width>241</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QRadioButton{color:sienna;}
-</string>
-   </property>
-   <property name="text">
-    <string>Overnight Service</string>
-   </property>
-  </widget>
-  <widget class="QRadioButton" name="COD">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>559</y>
-     <width>211</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Georgia</family>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QRadioButton{color:sienna;}
-</string>
-   </property>
-   <property name="text">
-    <string>Cash On Delivery</string>
-   </property>
-  </widget>
-  <widget class="QCommandLinkButton" name="commandLinkButton">
-   <property name="geometry">
-    <rect>
-     <x>660</x>
-     <y>540</y>
-     <width>131</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Segoe UI</family>
-     <pointsize>14</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLabel{color:moccasin;}
-</string>
-   </property>
-   <property name="text">
-    <string>CREATE</string>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>shipping.png</normaloff>shipping.png</iconset>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="Sender_name">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>280</y>
-     <width>151</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="Sender_Addr">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>320</y>
-     <width>151</width>
-     <height>61</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="Receiver_Addr">
-   <property name="geometry">
-    <rect>
-     <x>480</x>
-     <y>320</y>
-     <width>151</width>
-     <height>61</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="Receiver_name">
-   <property name="geometry">
-    <rect>
-     <x>480</x>
-     <y>280</y>
-     <width>151</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="Sender_Contact">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>400</y>
-     <width>151</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="Receiver_Contact">
-   <property name="geometry">
-    <rect>
-     <x>480</x>
-     <y>400</y>
-     <width>151</width>
-     <height>21</height>
-    </rect>
+   <property name="placeholderText">
+    <string>Firstname</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -441,79 +206,366 @@
     <pixmap>purepng.com-white-paper-planpaper-planeaeroplanepaper-gliderpaper-dartaircraftfolded-paperpaperboardclipart-1421526588176couen copy 2.png</pixmap>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLineEdit" name="Sender_lastname">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>480</y>
-     <width>61</width>
+     <x>210</x>
+     <y>210</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Lastname</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Receiver_lastname">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>210</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Lastname</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Receiver_firstname">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>210</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Firstname</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>119</y>
+     <width>801</width>
      <height>41</height>
     </rect>
    </property>
-   <property name="text">
-    <string/>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
    </property>
-   <property name="pixmap">
-    <pixmap>24hour_courier copy 2.png</pixmap>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="Line" name="line_2">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>520</y>
-     <width>41</width>
+     <x>390</x>
+     <y>140</y>
+     <width>20</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Sender_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>260</y>
+     <width>111</width>
      <height>31</height>
     </rect>
    </property>
-   <property name="text">
-    <string/>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
-   <property name="pixmap">
-    <pixmap>lua-cartoon-png-2 copy 3.png</pixmap>
+   <property name="styleSheet">
+    <string notr="true">QLabel{color:sienna;}
+</string>
+   </property>
+   <property name="text">
+    <string>Address</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="Sender_3">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>550</y>
-     <width>51</width>
-     <height>41</height>
+     <x>550</x>
+     <y>260</y>
+     <width>111</width>
+     <height>31</height>
     </rect>
    </property>
-   <property name="text">
-    <string/>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
-   <property name="pixmap">
-    <pixmap>cash-in-hand copy 4.png</pixmap>
+   <property name="styleSheet">
+    <string notr="true">QLabel{color:sienna;}
+</string>
+   </property>
+   <property name="text">
+    <string>Address</string>
    </property>
   </widget>
-  <zorder>background</zorder>
-  <zorder>ParcelExpress</zorder>
-  <zorder>TrackingNumber</zorder>
-  <zorder>TrackingNumber_edit</zorder>
-  <zorder>Information</zorder>
-  <zorder>Sender</zorder>
-  <zorder>Receiver</zorder>
-  <zorder>Name</zorder>
-  <zorder>Address</zorder>
-  <zorder>ContactNumber</zorder>
-  <zorder>Sender_name</zorder>
-  <zorder>Sender_Addr</zorder>
-  <zorder>Receiver_Addr</zorder>
-  <zorder>Receiver_name</zorder>
-  <zorder>Sender_Contact</zorder>
-  <zorder>Receiver_Contact</zorder>
-  <zorder>label</zorder>
-  <zorder>commandLinkButton</zorder>
-  <zorder>SameDayExpress</zorder>
-  <zorder>OS</zorder>
-  <zorder>COD</zorder>
-  <zorder>ShipmentType</zorder>
-  <zorder>label_2</zorder>
-  <zorder>label_3</zorder>
-  <zorder>label_4</zorder>
+  <widget class="QTextEdit" name="Sender_address">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>321</width>
+     <height>91</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="Receiver_address">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>310</y>
+     <width>321</width>
+     <height>91</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Sender_province">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>430</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Province</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Sender_postcode">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>430</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Postcode</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Receiver_province">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>430</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Province</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Receiver_postcode">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>430</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Postcode</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Sender_4">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>460</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{color:sienna;}
+</string>
+   </property>
+   <property name="text">
+    <string>Contact</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Sender_5">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>460</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Georgia</family>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{color:sienna;}
+</string>
+   </property>
+   <property name="text">
+    <string>Contact</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Sender_telno">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>510</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>                Tel.no</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Receiver_telno">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>510</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>               Tel.no</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Create">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>560</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 0 8px;
+  background: white;
+}
+QPushButton:hover:enabled { color: green }
+QPushButton:enabled { color: purple }</string>
+   </property>
+   <property name="text">
+    <string>CREATE</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Back">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>560</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 0 8px;
+  background: white;
+}
+QPushButton:hover:enabled { color: green }
+QPushButton:enabled { color: purple }</string>
+   </property>
+   <property name="text">
+    <string>BACK</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>540</y>
+     <width>811</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

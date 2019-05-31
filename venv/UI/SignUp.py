@@ -1,178 +1,138 @@
-# -*- coding: utf-8 -*-
+'''
+import mysql.connector
+class InValid(Exception): pass
+class SignUp():
+    mydb = mysql.connector.connect(
+        host="35.198.233.244",
+        user="root",
+        passwd="123456",
+        database="parcelexpress",
+        port="3306"
+    )
+    mycursor = mydb.cursor()
+    user = ''
+    password = ''
 
-# Form implementation generated from reading ui file 'SignUp.ui',
-# licensing of 'SignUp.ui' applies.
+    def __init__(self, user, password):
+        self.user = user
+        self.password = password
+
+    def UserExist(self):
+        if(self.user[0:3]=='Ad_'):# if admin
+            self.mycursor.execute("SELECT  Username FROM Admin")
+        else:
+            self.mycursor.execute("SELECT  Username FROM Customers")
+        myresult=self.mycursor.fetchall()
+        DataUser=[x[0] for x in myresult]
+        #print("Datauser: ",DataUser)
+        for i in DataUser:
+            if(self.user == i):
+                return True
+        return False
+
+    def signUp(self):
+        if(self.UserExist()==False and self.user[0:3]=='Ad_'):
+            sql = "INSERT INTO Admin(Username,Password) VALUES (%s, %s)"
+            val = (self.user, self.password)
+            self.mycursor.execute(sql, val)
+            self.mydb.commit()
+        elif(self.UserExist()==False and self.user[0:3]!='Ad_'):
+            sql = "INSERT INTO Customers(Username,Password) VALUES (%s, %s)"
+            val = (self.user, self.password)
+            self.mycursor.execute(sql, val)
+            self.mydb.commit()
+        else:
+            raise InValid('User is already exist')
+
+    def print(self):
+        self.mycursor.execute("SELECT Username, Password FROM Customers")
+        myresult = self.mycursor.fetchall()
+
+        for x in myresult:
+            print(x)
+#a=SignUp('Ad_pong','123456')
+#a.signUp()
+# mycursor.execute("SELECT Username, Password FROM Customer")
+# myresult = mycursor.fetchall()
 #
-# Created: Tue May 28 17:53:56 2019
-#      by: pyside2-uic  running on PySide2 5.12.0
-#
-# WARNING! All changes made in this file will be lost!
+# for x in myresult:
+#  print(x)
+# sql = "INSERT INTO Customer(Username,Password) VALUES (%s, %s)"
+# val = ("Somphon", "123456")
+# mycursor.execute(sql, val)
+# mydb.commit()
+# print("1 record inserted, UserId:", mycursor.lastrowid)
+# mycursor.execute("CREATE TABLE Customer (UserId INT AUTO_INCREMENT PRIMARY KEY,Username VARCHAR(20),Password VARCHAR (20))")
+# mycursor.execute("SHOW TABLES")
+# for x in mycursor:
+#  print(x)
+# mycursor=mydb.cursor()
+# mycursor.execute("CREATE TABLE User(Username VARCHAR(255),Password VARCHAR(255),
+# mycursor.execute("SHOW DATABASES")
+# for x in mycursor:
+#    print(x)
+'''
+import mysql.connector
+import uuid
+class InValid(Exception): pass
+class SignUp():
+    mydb = mysql.connector.connect(
+        host="35.198.233.244",
+        user="root",
+        passwd="123456",
+        database="parcelexpress",
+        port="3306"
+    )
+    mycursor = mydb.cursor()
+    user = ''
+    password = ''
 
-from PySide2 import QtCore, QtGui, QtWidgets
+    def __init__(self, user, password):
+        self.user = user
+        self.password = password
 
-class Ui_Form(object):
-    def setupUi(self, Form):
-        Form.setObjectName("Form")
-        Form.resize(786, 600)
-        self.bg = QtWidgets.QLabel(Form)
-        self.bg.setGeometry(QtCore.QRect(0, 0, 811, 601))
-        self.bg.setStyleSheet("QLabel{background: papayawhip;}")
-        self.bg.setText("")
-        self.bg.setObjectName("bg")
-        self.text = QtWidgets.QLabel(Form)
-        self.text.setGeometry(QtCore.QRect(130, 90, 521, 71))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        font.setPointSize(16)
-        font.setWeight(75)
-        font.setItalic(True)
-        font.setBold(True)
-        self.text.setFont(font)
-        self.text.setStyleSheet("QLabel{color:lightslategrey;}\n"
-"")
-        self.text.setObjectName("text")
-        self.Mr = QtWidgets.QCheckBox(Form)
-        self.Mr.setGeometry(QtCore.QRect(100, 230, 41, 20))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        self.Mr.setFont(font)
-        self.Mr.setObjectName("Mr")
-        self.buttonGroup = QtWidgets.QButtonGroup(Form)
-        self.buttonGroup.setObjectName("buttonGroup")
-        self.buttonGroup.addButton(self.Mr)
-        self.Mrs = QtWidgets.QCheckBox(Form)
-        self.Mrs.setGeometry(QtCore.QRect(180, 230, 51, 20))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        self.Mrs.setFont(font)
-        self.Mrs.setObjectName("Mrs")
-        self.buttonGroup.addButton(self.Mrs)
-        self.driver_button = QtWidgets.QRadioButton(Form)
-        self.driver_button.setGeometry(QtCore.QRect(340, 470, 100, 20))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        self.driver_button.setFont(font)
-        self.driver_button.setObjectName("driver_button")
-        self.buttonGroup_2 = QtWidgets.QButtonGroup(Form)
-        self.buttonGroup_2.setObjectName("buttonGroup_2")
-        self.buttonGroup_2.addButton(self.driver_button)
-        self.admin_button = QtWidgets.QRadioButton(Form)
-        self.admin_button.setGeometry(QtCore.QRect(340, 430, 100, 20))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        self.admin_button.setFont(font)
-        self.admin_button.setObjectName("admin_button")
-        self.buttonGroup_2.addButton(self.admin_button)
-        self.done = QtWidgets.QCommandLinkButton(Form)
-        self.done.setGeometry(QtCore.QRect(650, 530, 101, 41))
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(12)
-        font.setWeight(75)
-        font.setBold(True)
-        self.done.setFont(font)
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("shipping.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.done.setIcon(icon)
-        self.done.setObjectName("done")
-        self.admin_pic = QtWidgets.QLabel(Form)
-        self.admin_pic.setGeometry(QtCore.QRect(410, 420, 51, 41))
-        self.admin_pic.setText("")
-        self.admin_pic.setPixmap(QtGui.QPixmap("Admin-staff-women-1-33jyeega3zzf8zdve4wxz4 copy 2.png"))
-        self.admin_pic.setObjectName("admin_pic")
-        self.driver_pic = QtWidgets.QLabel(Form)
-        self.driver_pic.setGeometry(QtCore.QRect(430, 460, 31, 41))
-        self.driver_pic.setText("")
-        self.driver_pic.setPixmap(QtGui.QPixmap("delivery-man-driver-pngrepo-com copy 3.png"))
-        self.driver_pic.setObjectName("driver_pic")
-        self.lineEdit = QtWidgets.QLineEdit(Form)
-        self.lineEdit.setGeometry(QtCore.QRect(250, 230, 121, 31))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        self.lineEdit.setFont(font)
-        self.lineEdit.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit.setObjectName("lineEdit")
-        self.lineEdit_2 = QtWidgets.QLineEdit(Form)
-        self.lineEdit_2.setGeometry(QtCore.QRect(410, 230, 161, 31))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        self.lineEdit_2.setFont(font)
-        self.lineEdit_2.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit_2.setObjectName("lineEdit_2")
-        self.lineEdit_3 = QtWidgets.QLineEdit(Form)
-        self.lineEdit_3.setGeometry(QtCore.QRect(310, 290, 191, 31))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        self.lineEdit_3.setFont(font)
-        self.lineEdit_3.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit_3.setObjectName("lineEdit_3")
-        self.lineEdit_4 = QtWidgets.QLineEdit(Form)
-        self.lineEdit_4.setGeometry(QtCore.QRect(240, 350, 151, 31))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        self.lineEdit_4.setFont(font)
-        self.lineEdit_4.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit_4.setObjectName("lineEdit_4")
-        self.lineEdit_5 = QtWidgets.QLineEdit(Form)
-        self.lineEdit_5.setGeometry(QtCore.QRect(430, 350, 151, 31))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        self.lineEdit_5.setFont(font)
-        self.lineEdit_5.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit_5.setObjectName("lineEdit_5")
-        self.lineEdit_6 = QtWidgets.QLineEdit(Form)
-        self.lineEdit_6.setGeometry(QtCore.QRect(220, 170, 141, 31))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        self.lineEdit_6.setFont(font)
-        self.lineEdit_6.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit_6.setObjectName("lineEdit_6")
-        self.lineEdit_7 = QtWidgets.QLineEdit(Form)
-        self.lineEdit_7.setGeometry(QtCore.QRect(410, 170, 161, 31))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        self.lineEdit_7.setFont(font)
-        self.lineEdit_7.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit_7.setObjectName("lineEdit_7")
-        self.Ms_2 = QtWidgets.QCheckBox(Form)
-        self.Ms_2.setGeometry(QtCore.QRect(140, 230, 51, 20))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        self.Ms_2.setFont(font)
-        self.Ms_2.setObjectName("Ms_2")
-        self.label = QtWidgets.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(620, 90, 61, 51))
-        self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("purepng.com-white-paper-planpaper-planeaeroplanepaper-gliderpaper-dartaircraftfolded-paperpaperboardclipart-1421526588176couen copy 2.png"))
-        self.label.setObjectName("label")
+    def UserIdCreation(self):
+        front = '000'
+        body = uuid.uuid4().int
+        body=body%10000000
+        code = front+str(body)
+        return code
+    def insert(self,uid,phn,ema,fn,pv):
+        self.mycursor.execute("INSERT INTO User(UserId,PhoneNumber,Email,Firstname,Province) values(%d,%s,%s,%s,%s)"%(uid,phn,ema,fn,pv))
+    def UserExist(self):
+        if(self.user[0:3]=='Ad_'):# if admin
+            self.mycursor.execute("SELECT  Username FROM Admin")
+        else:
+            self.mycursor.execute("SELECT  Username FROM Customers")
+        myresult=self.mycursor.fetchall()
+        DataUser=[x[0] for x in myresult]
+        print(DataUser)
+        for i in DataUser:
+            print(i)
+            print(self.user)
+            if(self.user in i):
+                return True
+        return False
 
-        self.retranslateUi(Form)
-        QtCore.QMetaObject.connectSlotsByName(Form)
+    def signUp(self):
+        if(self.UserExist()==False and self.user[0:3]=='Ad_'):
+            sql = "INSERT INTO Admin(Username,Password) VALUES (%s, %s)"
+            val = (self.user, self.password)
+            self.mycursor.execute(sql, val)
+            self.mydb.commit()
+        elif(self.UserExist()==False and self.user[0:3]!='Ad_'):
+            sql = "INSERT INTO Customers(Username,Password) VALUES (%s, %s)"
+            val = (self.user, self.password)
+            self.mycursor.execute(sql, val)
+            self.mydb.commit()
+        else:
+            raise InValid('User is already exist')
 
-    def retranslateUi(self, Form):
-        Form.setWindowTitle(QtWidgets.QApplication.translate("Form", "Form", None, -1))
-        self.text.setText(QtWidgets.QApplication.translate("Form", "Welcome to Parcel Express\' Family!", None, -1))
-        self.Mr.setText(QtWidgets.QApplication.translate("Form", "Mr.", None, -1))
-        self.Mrs.setText(QtWidgets.QApplication.translate("Form", "Mrs.", None, -1))
-        self.driver_button.setText(QtWidgets.QApplication.translate("Form", "Driver", None, -1))
-        self.admin_button.setText(QtWidgets.QApplication.translate("Form", "Admin", None, -1))
-        self.done.setText(QtWidgets.QApplication.translate("Form", "DONE", None, -1))
-        self.lineEdit.setPlaceholderText(QtWidgets.QApplication.translate("Form", "firstname", None, -1))
-        self.lineEdit_2.setPlaceholderText(QtWidgets.QApplication.translate("Form", "lastname", None, -1))
-        self.lineEdit_3.setPlaceholderText(QtWidgets.QApplication.translate("Form", "province", None, -1))
-        self.lineEdit_4.setPlaceholderText(QtWidgets.QApplication.translate("Form", "phone number", None, -1))
-        self.lineEdit_5.setPlaceholderText(QtWidgets.QApplication.translate("Form", "email", None, -1))
-        self.lineEdit_6.setPlaceholderText(QtWidgets.QApplication.translate("Form", "username", None, -1))
-        self.lineEdit_7.setPlaceholderText(QtWidgets.QApplication.translate("Form", "password", None, -1))
-        self.Ms_2.setText(QtWidgets.QApplication.translate("Form", "Ms.", None, -1))
+    def print(self):
+        self.mycursor.execute("SELECT Username, Password FROM Customers")
+        myresult = self.mycursor.fetchall()
 
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    Form = QtWidgets.QWidget()
-    ui = Ui_Form()
-    ui.setupUi(Form)
-    Form.show()
-    sys.exit(app.exec_())
-
+        for x in myresult:
+            print(x)
+#a=SignUp('Ad_pong','123456')
+#print(a.UserIdCreation())

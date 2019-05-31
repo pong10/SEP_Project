@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'TrackingInfo.ui',
 # licensing of 'TrackingInfo.ui' applies.
 #
-# Created: Sun May 26 18:03:03 2019
+# Created: Wed May 29 14:44:54 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -14,6 +14,14 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(800, 600)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(Form.sizePolicy().hasHeightForWidth())
+        Form.setSizePolicy(sizePolicy)
+        Form.setMinimumSize(QtCore.QSize(800, 600))
+        Form.setMaximumSize(QtCore.QSize(800, 600))
+        Form.setBaseSize(QtCore.QSize(800, 600))
         self.bg = QtWidgets.QLabel(Form)
         self.bg.setGeometry(QtCore.QRect(0, 0, 801, 601))
         self.bg.setStyleSheet("QLabel{background: lightcyan;}")
