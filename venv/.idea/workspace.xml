@@ -1,56 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39c6259d-2ea9-4396-a1d2-cd8d75581f19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../UI/1334375.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/24hour_courier copy 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/860139 copy 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/Admin-staff-women-1-33jyeega3zzf8zdve4wxz4 copy 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/AdminSignIn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/AdminSignIn.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/AdminSignIn_2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/AdminSignIn_2.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/Create_TrackingNumber.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/Create_TrackingNumber.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/HomePage.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/SignIn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/SignUp.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/SignUp_admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/SignUp_user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/SignUp_user.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/TrackingInfo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/TrackingInfo.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/admin_enter_tracking.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/admin_enter_tracking.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/cash-in-hand copy 4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/delivery-man-driver-pngrepo-com copy 3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/driver_update.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/driver_update.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/enter_tracking.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/food_delivery_man.png.pagespeed.ce.fgGExqcaLE copy 20.17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/homepage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/kisspng-van-car-truck-delivery-cartoon-yellow-express-truck-5a7f5b77cdcad6.9479006315182959278429 copy 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/location-512 copy 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/lua-cartoon-png-2 copy 3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/open-parcel copy 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/paper_plane_PNG20 copy 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/parcel copy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/pin-png-25-300x300 copy 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/purepng.com-white-paper-planpaper-planeaeroplanepaper-gliderpaper-dartaircraftfolded-paperpaperboardclipart-1421526588176couen copy 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/red-location-icon-map-png-4 copy 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/shipping.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/showTrackingInfo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/showTrackingInfo.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/signUp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/user_enter_tracking.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/user_enter_tracking.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UI/users copy 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parcel-express-9ffc9-firebase-adminsdk-sqntg-0f018e07b8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pip-selfcheck.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyvenv.cfg" beforeDir="false" />
-    </list>
+    <list default="true" id="39c6259d-2ea9-4396-a1d2-cd8d75581f19" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,13 +47,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Driver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+            <state relative-caret-position="225">
+              <caret line="52" column="32" lean-forward="true" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Person.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MySql.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -336,7 +308,7 @@
       <workItem from="1559218067313" duration="6063000" />
       <workItem from="1559272537593" duration="15151000" />
       <workItem from="1559291313281" duration="92000" />
-      <workItem from="1559291551094" duration="16148000" />
+      <workItem from="1559291551094" duration="16391000" />
     </task>
     <task id="LOCAL-00001" summary="Modify_Driver">
       <created>1559200250314</created>
@@ -356,11 +328,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50304000" />
+    <option name="totallyTimeSpent" value="50547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.27919462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -421,23 +392,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Person.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MySql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -565,10 +519,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Driver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        <state relative-caret-position="225">
+          <caret line="52" column="32" lean-forward="true" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Person.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
