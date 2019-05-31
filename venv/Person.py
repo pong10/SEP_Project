@@ -1,5 +1,6 @@
 
 class Person:
+    state_of_parcel=['Parcel is in the source branch','Parcel Express driver prepare to deliver','Parcel is at its destination','Waiting for receiver','Parcel receive']
     def __init__(self,name,address,phone,email):
         self.Name=name
         self.Address=address

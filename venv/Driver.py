@@ -1,8 +1,6 @@
 from Employee import *
-from Parcel import *
+from Parcel import Parcel
 class Driver(Employee):
-
-    state_of_parcel=['Parcel is in the source branch','Parcel Express driver prepare to deliver','Parcel is at its destination','Waiting for receiver','Parcel receive']
 
     Province = ['Chiang_Mai', 'Chiang_Rai', 'Phayao','Nan','Lamphun','Lampang','Phrae','Uttaradit','Tak','Sukhothai','Phitsanulok','Kamphaeng_Phet','Phichit'
     ,'Uthai_Thani','Nakhon_Sawan','Phetchabun','Loei','Udon_Thani','Nongbua_Lumphoo','Nong_Khai','Sakon_Nakhon','Nakhon_Phanom','Mukdahan','Kalasin','Maha Sarakham','Khon Kaen'
@@ -11,17 +9,49 @@ class Driver(Employee):
     ,'Prachin_Buri','Sa_Kaew','Cha_Choeng_Sao','Chon_Buri','Rayong','Chanthaburi','Trat','Chumphon','Ranong', 'Surat_Thani', 'Phang_Nga', 'Phuket', 'Krabi', 'Nakhon_Si_Thammarat'
     ,'Phatthalung','Trang','Satun','Song_Khla','Pattani','Yala','Narathiwat','Suphan_Buri','Kanchanaburi']
 
-    def __init__(self, name, address, phone, email):
+    def __init__(self, name, address, phone, email,PickupAddress,Destination):
         super().__init__(name,address,phone,email)
         self.Current_state=-1
+        self.pickUpAddress=PickupAddress
+        self.Destination=Destination
 
     def getState_of_parcel(self):
         return self.Current_state
 
-    def collected(self,address):
-        self.Current_state=1
 
-    def update(self,provinceReach):
-        return True
+    def getAllParcelByProvinceOrigin(self,Province):
+        Parcel.mycursor.execute("SELECT TrackingNumber,CurrentLocation from Parcel")
+        tracking_number=[]
+        myresult = Parcel.mycursor.fetchall()
+        for Traking_number,Location in myresult:
+            if(Location == Province):
+                tracking_number.append(Traking_number)
+        return tracking_number
 
+    def getAllParcelByProvinceFinal(self, Province):
+        Parcel.mycursor.execute("SELECT TrackingNumber,Destination from Parcel")
+        tracking_number = []
+        myresult = Parcel.mycursor.fetchall()
+        for Traking_number, Location in myresult:
+            if (Location == Province):
+                tracking_number.append(Traking_number)
+        return tracking_number
+
+    def collected(self):
+        state=self.state_of_parcel[1]
+        Pickup_trackingNumber=self.getAllParcelByProvinceOrigin(self.pickUpAddress)
+        for i in Pickup_trackingNumber:
+            Parcel.mycursor.execute("UPDATE Parcel SET State = '"+ state +"'where TrackingNumber = '"+str(i)+"';" )
+            Parcel.mydb.commit()
+
+    def ReachDestination(self):
+        state=self.state_of_parcel[2]
+        Reach_trackingNumber=self.getAllParcelByProvinceFinal(self.Destination)
+        for i in Reach_trackingNumber:
+            print(i)
+            Parcel.mycursor.execute("UPDATE Parcel SET State = '"+ state +"'where TrackingNumber = '"+str(i)+"';" )
+            Parcel.mydb.commit()
+
+t=Driver('Somphon','Rueangsri','082454565','manza1921@hotmail.com','Chiang_Mai','Chiang_Rai')
+print(t.ReachDestination())
 

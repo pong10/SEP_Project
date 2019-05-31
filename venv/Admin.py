@@ -14,7 +14,7 @@ class Admin(Employee):
         super().__init__(name,address,phone,email)
 
     def generate(self,countrycode='--'):
-        front = 'ABC'
+        front = 'PAE'
         body = uuid.uuid4().hex
         body = body.upper()[0:8]
         code = front + body + countrycode
@@ -27,13 +27,6 @@ class Admin(Employee):
         self.mycursor.execute(sql, val)
         self.mydb.commit()
 
-    def Tracking(self,TrackingId,name):
-        self.mycursor.execute("select ID,NameOfUser from Tracking_ID;")
-        myresult=self.mycursor.fetchall()
-        for i,j in myresult:
-            if TrackingId==i and name==j:
-                return True
-        return False
 
 t=Admin("somphon","123456",'0922795229','manza1921@hotmail.com')
 print(t.generate('TH'))

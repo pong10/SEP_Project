@@ -60,23 +60,5 @@ class SignUp():
         for x in myresult:
             print(x)
 a=SignUp('Ad_pong','123456')
-print(a.UserIdCreation())
-# mycursor.execute("SELECT Username, Password FROM Customer")
-# myresult = mycursor.fetchall()
-#
-# for x in myresult:
-#  print(x)
-# sql = "INSERT INTO Customer(Username,Password) VALUES (%s, %s)"
-# val = ("Somphon", "123456")
-# mycursor.execute(sql, val)
-# mydb.commit()
-# print("1 record inserted, UserId:", mycursor.lastrowid)
-# mycursor.execute("CREATE TABLE Customer (UserId INT AUTO_INCREMENT PRIMARY KEY,Username VARCHAR(20),Password VARCHAR (20))")
-# mycursor.execute("SHOW TABLES")
-# for x in mycursor:
-#  print(x)
-# mycursor=mydb.cursor()
-# mycursor.execute("CREATE TABLE User(Username VARCHAR(255),Password VARCHAR(255),
-# mycursor.execute("SHOW DATABASES")
-# for x in mycursor:
-#    print(x)
+print(a.mycursor)
+
