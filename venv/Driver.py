@@ -2,6 +2,7 @@ from Employee import *
 from Parcel import Parcel
 class Driver(Employee):
 
+
     state_of_parcel = ['Parcel is in the source branch', 'Parcel Express driver prepare to deliver',
                        'Parcel is at its destination', 'Waiting for receiver', 'Parcel receive']
 
@@ -12,11 +13,9 @@ class Driver(Employee):
     ,'Prachin_Buri','Sa_Kaew','Cha_Choeng_Sao','Chon_Buri','Rayong','Chanthaburi','Trat','Chumphon','Ranong', 'Surat_Thani', 'Phang_Nga', 'Phuket', 'Krabi', 'Nakhon_Si_Thammarat'
     ,'Phatthalung','Trang','Satun','Song_Khla','Pattani','Yala','Narathiwat','Suphan_Buri','Kanchanaburi']
 
-    def __init__(self):
-        super().__init__(name,address,phone,email)
+    def __init__(self,name,phoneNumber,email,province):
+        super().__init__(name,phoneNumber,email,province)
         self.Current_state=-1
-        self.pickUpAddress=PickupAddress
-        self.Destination=Destination
 
     def getState_of_parcel(self):
         return self.Current_state
@@ -41,6 +40,7 @@ class Driver(Employee):
         return tracking_number
 
     def collected(self):
+
         state=self.state_of_parcel[1]
         Pickup_trackingNumber=self.getAllParcelByProvinceOrigin(self.pickUpAddress)
         for i in Pickup_trackingNumber:
@@ -48,6 +48,7 @@ class Driver(Employee):
             Parcel.mydb.commit()
 
     def ReachDestination(self):
+
         state=self.state_of_parcel[2]
         Reach_trackingNumber=self.getAllParcelByProvinceFinal(self.Destination)
         for i in Reach_trackingNumber:

@@ -20,6 +20,7 @@ class Admin(Employee):
         body = body.upper()[0:8]
         code = front + body + countrycode
         return code
+
     def createTrackingNumber(self,tracking_id,sender_firstname,sender_lastname,sender_address,sender_province,sender_postcode,sender_contact,receiver_firstname,receiver_lastname,receiver_address,receiver_province,receiver_postcode,receiver_contact):
         sender_name=sender_firstname+sender_lastname
         receiver_name=receiver_firstname+receiver_lastname
