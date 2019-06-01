@@ -21,11 +21,16 @@ class Parcel():
     def getstate(self):
         return self.current_state
 
+    def getParcelBygroup(self):
+        self.mycursor.execute("select Sender_province,Receiver_province,count(*) from Parcel group by Sender_province,Receiver_province")
+        parcel=self.mycursor.fetchall()
+        return parcel
+#select * from Parcel")
     def printstate(self):
         for i in range(0,4):
             if(self.current_state==self.state_of_parcel[i]):
                 break
             else:
                 print(self.state_of_parcel[i])
-#t=Driver("123456",'Somphon')
-#print(t.getAllParcelFromProvince('Chiang_Mai'))
+t=Parcel("123456",'Somphon')
+t.getParcelBygroup()

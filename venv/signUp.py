@@ -52,7 +52,7 @@ class SignUp():
             self.mycursor.execute("SELECT username FROM Users")
         myresult=self.mycursor.fetchall()
         DataUser=[x[0] for x in myresult]
-        print(DataUser)
+
         for i in DataUser:
             if(self.user in i):
                 return True
