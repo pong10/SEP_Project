@@ -12,7 +12,8 @@ class showHistory():
     def __init__(self,u):
         command="select Name from Users where username='" + u +"';"
         self.mycursor.execute(command)
-        self.username=self.mycursor.fetchall()
+        try_username=self.mycursor.fetchall()
+        self.username=try_username[0][0]
         self.history=[]
 
 
@@ -25,8 +26,10 @@ class showHistory():
         myresult=self.mycursor.fetchall()
         DataUser=[x[0] for x in myresult]
         for i in DataUser:
-
+            print(i)
+            print(self.username)
             if i==self.username:
+
                 lst.append(i)
 
         for i in lst:
@@ -49,7 +52,8 @@ class showHistory():
     def getTrackingNumber(self):
         for i in range(0,len(self.history)):
             return self.history[i][0]
-
+t=showHistory('Nincee')
+print(t.GetDetail())
 
 
 
