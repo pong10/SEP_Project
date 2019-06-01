@@ -13,8 +13,10 @@ class Driver(Employee):
     ,'Prachin_Buri','Sa_Kaew','Cha_Choeng_Sao','Chon_Buri','Rayong','Chanthaburi','Trat','Chumphon','Ranong', 'Surat_Thani', 'Phang_Nga', 'Phuket', 'Krabi', 'Nakhon_Si_Thammarat'
     ,'Phatthalung','Trang','Satun','Song_Khla','Pattani','Yala','Narathiwat','Suphan_Buri','Kanchanaburi']
 
-    def __init__(self,name,phoneNumber,email,province):
+    def __init__(self,pick_up,destination,name='',phoneNumber='',email='',province=''):
         super().__init__(name,phoneNumber,email,province)
+        self.pickUpAddress=pick_up
+        self.Destination=destination
         self.Current_state=-1
 
     def getState_of_parcel(self):
@@ -40,7 +42,6 @@ class Driver(Employee):
         return tracking_number
 
     def collected(self):
-
         state=self.state_of_parcel[1]
         Pickup_trackingNumber=self.getAllParcelByProvinceOrigin(self.pickUpAddress)
         for i in Pickup_trackingNumber:
