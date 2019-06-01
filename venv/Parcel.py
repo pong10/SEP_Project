@@ -22,7 +22,7 @@ class Parcel():
         return self.current_state
 
     def getParcelBygroup(self):
-        self.mycursor.execute("select Sender_province,Receiver_province,count(*) from Parcel group by Sender_province,Receiver_province")
+        self.mycursor.execute("select Sender_province,Receiver_province,count(*) from Parcel where State='Parcel is in the source branch' group by Sender_province,Receiver_province")
         parcel=self.mycursor.fetchall()
         return parcel
 #select * from Parcel")
@@ -32,5 +32,3 @@ class Parcel():
                 break
             else:
                 print(self.state_of_parcel[i])
-t=Parcel("123456",'Somphon')
-t.getParcelBygroup()
