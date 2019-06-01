@@ -200,9 +200,9 @@ class Ui_Form_Create_TrackingNumber(object):
 "QPushButton:hover:enabled { color: green }\n"
 "QPushButton:enabled { color: purple }")
         self.Create.setObjectName("Create")
-        self.Back = QtWidgets.QPushButton(Form)
-        self.Back.setGeometry(QtCore.QRect(40, 560, 93, 28))
-        self.Back.setStyleSheet("QPushButton\n"
+        self.back = QtWidgets.QPushButton(Form)
+        self.back.setGeometry(QtCore.QRect(40, 560, 93, 28))
+        self.back.setStyleSheet("QPushButton\n"
 "{\n"
 "  border: 2px solid gray;\n"
 "  border-radius: 10px;\n"
@@ -211,7 +211,7 @@ class Ui_Form_Create_TrackingNumber(object):
 "}\n"
 "QPushButton:hover:enabled { color: green }\n"
 "QPushButton:enabled { color: purple }")
-        self.Back.setObjectName("Back")
+        self.back.setObjectName("Back")
         self.line_3 = QtWidgets.QFrame(Form)
         self.line_3.setGeometry(QtCore.QRect(-10, 540, 811, 31))
         self.line_3.setFrameShadow(QtWidgets.QFrame.Plain)
@@ -235,22 +235,22 @@ class Ui_Form_Create_TrackingNumber(object):
         self.Receiver_firstname.setPlaceholderText(QtWidgets.QApplication.translate("Form", "Firstname", None, -1))
         self.Sender_2.setText(QtWidgets.QApplication.translate("Form", "Address", None, -1))
         self.Sender_3.setText(QtWidgets.QApplication.translate("Form", "Address", None, -1))
-<<<<<<< HEAD
+
         self.Sender_province.setPlaceholderText(QtWidgets.QApplication.translate("Form", "From address", None, -1))
         self.Sender_postcode.setPlaceholderText(QtWidgets.QApplication.translate("Form", "Postcode", None, -1))
         self.Receiver_province.setPlaceholderText(QtWidgets.QApplication.translate("Form", "To address", None, -1))
-=======
+
         self.Sender_province.setPlaceholderText(QtWidgets.QApplication.translate("Form", "From Province", None, -1))
         self.Sender_postcode.setPlaceholderText(QtWidgets.QApplication.translate("Form", "Postcode", None, -1))
         self.Receiver_province.setPlaceholderText(QtWidgets.QApplication.translate("Form", "To Province", None, -1))
->>>>>>> 46cdb8ca7b1912c48220f099609e890d3161c166
+
         self.Receiver_postcode.setPlaceholderText(QtWidgets.QApplication.translate("Form", "Postcode", None, -1))
         self.Sender_4.setText(QtWidgets.QApplication.translate("Form", "Contact", None, -1))
         self.Sender_5.setText(QtWidgets.QApplication.translate("Form", "Contact", None, -1))
         self.Sender_telno.setPlaceholderText(QtWidgets.QApplication.translate("Form", "                Tel.no", None, -1))
         self.Receiver_telno.setPlaceholderText(QtWidgets.QApplication.translate("Form", "               Tel.no", None, -1))
         self.Create.setText(QtWidgets.QApplication.translate("Form", "CREATE", None, -1))
-        self.Back.setText(QtWidgets.QApplication.translate("Form", "BACK", None, -1))
+        self.back.setText(QtWidgets.QApplication.translate("Form", "BACK", None, -1))
 
 
 if __name__ == "__main__":
