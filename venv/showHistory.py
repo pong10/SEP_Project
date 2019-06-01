@@ -29,7 +29,6 @@ class showHistory():
                 lst.append(i)
 
         for i in lst:
-
             command="select TrackingNumber,Sender,Sender_province,Receiver,Receiver_province from Parcel where Sender ='" + i +"';"
             self.mycursor.execute(command)
             results = self.mycursor.fetchall()

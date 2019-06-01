@@ -10,7 +10,7 @@ class Parcel():
         port="3306"
     )
     mycursor = mydb.cursor()
-    def __init__(self,Tracking_number,name):
+    def __init__(self,Tracking_number=' ',name=' '):
         self.TrackingNo=Tracking_number
         self.Name=name
         self.current_state=''
