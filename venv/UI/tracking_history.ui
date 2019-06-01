@@ -91,6 +91,17 @@
    </column>
    <column>
     <property name="text">
+     <string>Source</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>Georgia</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
      <string>Receiver</string>
     </property>
     <property name="font">
