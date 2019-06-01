@@ -13,17 +13,17 @@ class SignIn():
         self.user = user
         self.password = password
 
-
-    def signIn(self):
-        if(self.user[0:3]=='Ad_' or self.user=='pnmoiannnygcoeu362'):# if admin
-            self.mycursor.execute("SELECT Username,Password from Admin")
+    def SignIn(self):
+        if(self.user[0:3]=='Ad_'):# if admin
+            self.mycursor.execute("SELECT username,Password from Admin")
+        elif(self.user[0:3]=='Dr_'):
+            self.mycursor.execute("SELECT username,Password from Driver")
+        elif(self.user=='pnmoiannnygcoeu362'):
+            self.mycursor.execute("SELECT username,Password from Master")
         else:
-            self.mycursor.execute("SELECT Username,Password from Customers")
+            self.mycursor.execute("SELECT username,Password from Users")
         myresult=self.mycursor.fetchall()
         for i,j in myresult:
             if self.user==i and self.password==j:
                 return True
         return False
-
-#a=SignIn('pnmoiannnygcoeu362','qwerty')
-#print(a.signIn())

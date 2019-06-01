@@ -10,7 +10,7 @@
 
 from PySide2 import QtCore, QtGui, QtWidgets
 
-class Ui_Form(object):
+class Ui_Form_Driver_Update(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(800, 600)
@@ -62,16 +62,16 @@ class Ui_Form(object):
 "")
         self.destination.setObjectName("destination")
         self.label_5 = QtWidgets.QLabel(Form)
-        self.label_5.setGeometry(QtCore.QRect(360, 180, 261, 61))
+        self.label_5.setGeometry(QtCore.QRect(380, 175, 261, 61))
         font = QtGui.QFont()
-        font.setPointSize(11)
+        font.setPointSize(15)
         self.label_5.setFont(font)
         self.label_5.setText("")
         self.label_5.setObjectName("label_5")
         self.destination_input = QtWidgets.QLabel(Form)
         self.destination_input.setGeometry(QtCore.QRect(280, 280, 261, 61))
         font = QtGui.QFont()
-        font.setPointSize(11)
+        font.setPointSize(15)
         self.destination_input.setFont(font)
         self.destination_input.setText("")
         self.destination_input.setObjectName("destination_input")
@@ -111,7 +111,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Form = QtWidgets.QWidget()
-    ui = Ui_Form()
+    ui = Ui_Form_Driver_Update()
     ui.setupUi(Form)
     Form.show()
     sys.exit(app.exec_())

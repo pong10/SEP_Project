@@ -3,14 +3,14 @@
 # Form implementation generated from reading ui file 'showTrackingInfo.ui',
 # licensing of 'showTrackingInfo.ui' applies.
 #
-# Created: Fri May 31 00:18:43 2019
+# Created: Sat Jun  1 02:32:30 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
 
 from PySide2 import QtCore, QtGui, QtWidgets
 
-class Ui_Form(object):
+class Ui_Form_showTrackingInfo(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(800, 600)
@@ -53,7 +53,7 @@ class Ui_Form(object):
         font.setStrikeOut(False)
         font.setBold(True)
         self.showtrackingnumber.setFont(font)
-        self.showtrackingnumber.setStyleSheet("QLabel{color:lightgrey;}\n"
+        self.showtrackingnumber.setStyleSheet("QLabel{color:black;}\n"
 "")
         self.showtrackingnumber.setObjectName("showtrackingnumber")
         self.Info = QtWidgets.QLabel(Form)
@@ -105,36 +105,42 @@ class Ui_Form(object):
         self.progressBar.setTextVisible(False)
         self.progressBar.setOrientation(QtCore.Qt.Vertical)
         self.progressBar.setObjectName("progressBar")
-        self.senddate = QtWidgets.QLabel(Form)
-        self.senddate.setGeometry(QtCore.QRect(40, 190, 101, 21))
+        self.receiveraddress = QtWidgets.QLabel(Form)
+        self.receiveraddress.setGeometry(QtCore.QRect(40, 220, 161, 21))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(12)
-        self.senddate.setFont(font)
-        self.senddate.setObjectName("senddate")
-        self.show_senddate = QtWidgets.QLabel(Form)
-        self.show_senddate.setGeometry(QtCore.QRect(140, 190, 351, 31))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        font.setPointSize(12)
-        self.show_senddate.setFont(font)
-        self.show_senddate.setText("")
-        self.show_senddate.setObjectName("show_senddate")
-        self.sender = QtWidgets.QLabel(Form)
-        self.sender.setGeometry(QtCore.QRect(40, 220, 71, 16))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        font.setPointSize(12)
-        self.sender.setFont(font)
-        self.sender.setObjectName("sender")
+        font.setWeight(50)
+        font.setUnderline(True)
+        font.setBold(False)
+        self.receiveraddress.setFont(font)
+        self.receiveraddress.setObjectName("receiveraddress")
         self.show_sender = QtWidgets.QLabel(Form)
-        self.show_sender.setGeometry(QtCore.QRect(110, 210, 381, 31))
+        self.show_sender.setGeometry(QtCore.QRect(120, 185, 351, 31))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(12)
         self.show_sender.setFont(font)
         self.show_sender.setText("")
         self.show_sender.setObjectName("show_sender")
+        self.sender = QtWidgets.QLabel(Form)
+        self.sender.setGeometry(QtCore.QRect(40, 190, 71, 21))
+        font = QtGui.QFont()
+        font.setFamily("Georgia")
+        font.setPointSize(12)
+        font.setWeight(50)
+        font.setUnderline(True)
+        font.setBold(False)
+        self.sender.setFont(font)
+        self.sender.setObjectName("sender")
+        self.show_receiveraddress = QtWidgets.QLabel(Form)
+        self.show_receiveraddress.setGeometry(QtCore.QRect(210, 200, 291, 61))
+        font = QtGui.QFont()
+        font.setFamily("Georgia")
+        font.setPointSize(12)
+        self.show_receiveraddress.setFont(font)
+        self.show_receiveraddress.setText("")
+        self.show_receiveraddress.setObjectName("show_receiveraddress")
         self.sourcebranch = QtWidgets.QLabel(Form)
         self.sourcebranch.setGeometry(QtCore.QRect(550, 400, 201, 41))
         font = QtGui.QFont()
@@ -205,7 +211,7 @@ class Ui_Form(object):
         self.showtrackingnumber.setText(QtWidgets.QApplication.translate("Form", "showtrackingnumber", None, -1))
         self.Info.setText(QtWidgets.QApplication.translate("Form", "Information:", None, -1))
         self.commandLinkButton.setText(QtWidgets.QApplication.translate("Form", "BACK", None, -1))
-        self.senddate.setText(QtWidgets.QApplication.translate("Form", "Send date:", None, -1))
+        self.receiveraddress.setText(QtWidgets.QApplication.translate("Form", "Receiver Address:", None, -1))
         self.sender.setText(QtWidgets.QApplication.translate("Form", "Sender:", None, -1))
         self.sourcebranch.setText(QtWidgets.QApplication.translate("Form", "Parcel is at the source branch", None, -1))
         self.label_2.setText(QtWidgets.QApplication.translate("Form", "Prepare to deliver", None, -1))
@@ -218,7 +224,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Form = QtWidgets.QWidget()
-    ui = Ui_Form()
+    ui = Ui_Form_showTrackingInfo()
     ui.setupUi(Form)
     Form.show()
     sys.exit(app.exec_())

@@ -3,17 +3,18 @@
 # Form implementation generated from reading ui file 'TrackingInfo.ui',
 # licensing of 'TrackingInfo.ui' applies.
 #
-# Created: Wed May 29 14:44:54 2019
+# Created: Fri May 31 17:19:03 2019
 #      by: pyside2-uic  running on PySide2 5.12.0
 #
 # WARNING! All changes made in this file will be lost!
 
 from PySide2 import QtCore, QtGui, QtWidgets
 
-class Ui_Form(object):
+class Ui_Form_Confirm(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(800, 600)
+        Form.setWindowIcon(QtGui.QIcon("860139 copy 2.png"))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -51,56 +52,40 @@ class Ui_Form(object):
         font.setBold(True)
         self.Info.setFont(font)
         self.Info.setObjectName("Info")
-        self.confirm = QtWidgets.QCommandLinkButton(Form)
-        self.confirm.setGeometry(QtCore.QRect(630, 530, 151, 41))
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(14)
-        font.setWeight(75)
-        font.setItalic(False)
-        font.setBold(True)
-        self.confirm.setFont(font)
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("shipping.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.confirm.setIcon(icon)
-        self.confirm.setObjectName("confirm")
         self.rname = QtWidgets.QLabel(Form)
-        self.rname.setGeometry(QtCore.QRect(100, 360, 141, 21))
+        self.rname.setGeometry(QtCore.QRect(90, 360, 141, 21))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(11)
+        font.setUnderline(True)
         self.rname.setFont(font)
         self.rname.setObjectName("rname")
         self.sname = QtWidgets.QLabel(Form)
-        self.sname.setGeometry(QtCore.QRect(100, 190, 131, 31))
+        self.sname.setGeometry(QtCore.QRect(90, 200, 131, 31))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(11)
+        font.setUnderline(True)
         self.sname.setFont(font)
         self.sname.setObjectName("sname")
         self.senderAdd = QtWidgets.QLabel(Form)
-        self.senderAdd.setGeometry(QtCore.QRect(400, 190, 161, 41))
+        self.senderAdd.setGeometry(QtCore.QRect(90, 240, 161, 41))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(11)
+        font.setUnderline(True)
         self.senderAdd.setFont(font)
         self.senderAdd.setObjectName("senderAdd")
         self.raddr = QtWidgets.QLabel(Form)
-        self.raddr.setGeometry(QtCore.QRect(420, 350, 161, 41))
+        self.raddr.setGeometry(QtCore.QRect(90, 410, 161, 41))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(11)
+        font.setUnderline(True)
         self.raddr.setFont(font)
         self.raddr.setObjectName("raddr")
-        self.shipmenttype = QtWidgets.QLabel(Form)
-        self.shipmenttype.setGeometry(QtCore.QRect(270, 480, 131, 31))
-        font = QtGui.QFont()
-        font.setFamily("Georgia")
-        font.setPointSize(11)
-        self.shipmenttype.setFont(font)
-        self.shipmenttype.setObjectName("shipmenttype")
         self.showtrackingnumber = QtWidgets.QLabel(Form)
-        self.showtrackingnumber.setGeometry(QtCore.QRect(470, 30, 241, 71))
+        self.showtrackingnumber.setGeometry(QtCore.QRect(410, 80, 351, 71))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(10)
@@ -110,74 +95,77 @@ class Ui_Form(object):
         font.setStrikeOut(False)
         font.setBold(True)
         self.showtrackingnumber.setFont(font)
-        self.showtrackingnumber.setStyleSheet("QLabel{color:lightgrey;}\n"
+        self.showtrackingnumber.setStyleSheet("QLabel{color:black;}\n"
 "")
         self.showtrackingnumber.setObjectName("showtrackingnumber")
         self.showsname = QtWidgets.QLabel(Form)
-        self.showsname.setGeometry(QtCore.QRect(240, 190, 121, 31))
+        self.showsname.setGeometry(QtCore.QRect(230, 200, 511, 31))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(10)
         self.showsname.setFont(font)
-        self.showsname.setStyleSheet("QLabel{color:lightgrey;}\n"
+        self.showsname.setStyleSheet("QLabel{color:black;}\n"
 "")
         self.showsname.setObjectName("showsname")
         self.showsAdd = QtWidgets.QLabel(Form)
-        self.showsAdd.setGeometry(QtCore.QRect(550, 170, 211, 81))
+        self.showsAdd.setGeometry(QtCore.QRect(240, 220, 541, 81))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(10)
         self.showsAdd.setFont(font)
-        self.showsAdd.setStyleSheet("QLabel{color:lightgrey;}\n"
+        self.showsAdd.setStyleSheet("QLabel{color:black;}\n"
 "")
         self.showsAdd.setObjectName("showsAdd")
         self.showrname = QtWidgets.QLabel(Form)
-        self.showrname.setGeometry(QtCore.QRect(240, 360, 181, 21))
+        self.showrname.setGeometry(QtCore.QRect(240, 360, 481, 21))
         font = QtGui.QFont()
         font.setPointSize(10)
         self.showrname.setFont(font)
-        self.showrname.setStyleSheet("QLabel{color:lightgrey;}\n"
+        self.showrname.setStyleSheet("QLabel{color:black;}\n"
+"\n"
 "")
         self.showrname.setObjectName("showrname")
         self.showradd = QtWidgets.QLabel(Form)
-        self.showradd.setGeometry(QtCore.QRect(580, 330, 211, 81))
+        self.showradd.setGeometry(QtCore.QRect(250, 390, 531, 81))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(10)
         self.showradd.setFont(font)
-        self.showradd.setStyleSheet("QLabel{color:lightgrey;}\n"
+        self.showradd.setStyleSheet("QLabel{color:black;}\n"
 "")
         self.showradd.setObjectName("showradd")
         self.sendercon = QtWidgets.QLabel(Form)
-        self.sendercon.setGeometry(QtCore.QRect(100, 250, 221, 51))
+        self.sendercon.setGeometry(QtCore.QRect(90, 290, 221, 51))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(11)
+        font.setUnderline(True)
         self.sendercon.setFont(font)
         self.sendercon.setObjectName("sendercon")
         self.showsendercon = QtWidgets.QLabel(Form)
-        self.showsendercon.setGeometry(QtCore.QRect(320, 260, 251, 31))
+        self.showsendercon.setGeometry(QtCore.QRect(310, 300, 251, 31))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(10)
         self.showsendercon.setFont(font)
-        self.showsendercon.setStyleSheet("QLabel{color:lightgrey;}\n"
+        self.showsendercon.setStyleSheet("QLabel{color:black;}\n"
 "")
         self.showsendercon.setObjectName("showsendercon")
         self.showrcon = QtWidgets.QLabel(Form)
-        self.showrcon.setGeometry(QtCore.QRect(330, 420, 291, 31))
+        self.showrcon.setGeometry(QtCore.QRect(320, 480, 291, 31))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(10)
         self.showrcon.setFont(font)
-        self.showrcon.setStyleSheet("QLabel{color:lightgrey;}\n"
+        self.showrcon.setStyleSheet("QLabel{color:black;}\n"
 "")
         self.showrcon.setObjectName("showrcon")
         self.rcon = QtWidgets.QLabel(Form)
-        self.rcon.setGeometry(QtCore.QRect(100, 410, 241, 51))
+        self.rcon.setGeometry(QtCore.QRect(90, 470, 241, 51))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(11)
+        font.setUnderline(True)
         self.rcon.setFont(font)
         self.rcon.setObjectName("rcon")
         self.pic = QtWidgets.QLabel(Form)
@@ -185,25 +173,37 @@ class Ui_Form(object):
         self.pic.setText("")
         self.pic.setPixmap(QtGui.QPixmap("open-parcel copy 2.png"))
         self.pic.setObjectName("pic")
-        self.showshipmenttype_2 = QtWidgets.QLabel(Form)
-        self.showshipmenttype_2.setGeometry(QtCore.QRect(400, 480, 231, 41))
-        font = QtGui.QFont()
-        font.setPointSize(10)
-        self.showshipmenttype_2.setFont(font)
-        self.showshipmenttype_2.setStyleSheet("QLabel{color:lightgrey;}\n"
-"")
-        self.showshipmenttype_2.setObjectName("showshipmenttype_2")
-        self.confirm_2 = QtWidgets.QCommandLinkButton(Form)
-        self.confirm_2.setGeometry(QtCore.QRect(30, 540, 111, 41))
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(14)
-        font.setWeight(75)
-        font.setItalic(False)
-        font.setBold(True)
-        self.confirm_2.setFont(font)
-        self.confirm_2.setIcon(icon)
-        self.confirm_2.setObjectName("confirm_2")
+        self.back = QtWidgets.QPushButton(Form)
+        self.back.setGeometry(QtCore.QRect(30, 550, 93, 28))
+        self.back.setStyleSheet("QPushButton\n"
+"{\n"
+"  border: 2px solid gray;\n"
+"  border-radius: 10px;\n"
+"  padding: 0 8px;\n"
+"  background: white;\n"
+"}\n"
+"QPushButton:hover:enabled { color: green }\n"
+"QPushButton:enabled { color: purple }")
+        self.back.setObjectName("back")
+        self.confirm = QtWidgets.QPushButton(Form)
+        self.confirm.setGeometry(QtCore.QRect(670, 550, 93, 28))
+        self.confirm.setStyleSheet("QPushButton\n"
+"{\n"
+"  border: 2px solid gray;\n"
+"  border-radius: 10px;\n"
+"  padding: 0 8px;\n"
+"  background: white;\n"
+"}\n"
+"QPushButton:hover:enabled { color: green }\n"
+"QPushButton:enabled { color: purple }")
+        self.confirm.setObjectName("confirm")
+        self.line = QtWidgets.QFrame(Form)
+        self.line.setGeometry(QtCore.QRect(0, 330, 801, 20))
+        self.line.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.line.setLineWidth(3)
+        self.line.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line.setObjectName("line")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -212,12 +212,10 @@ class Ui_Form(object):
         Form.setWindowTitle(QtWidgets.QApplication.translate("Form", "Form", None, -1))
         self.Tracking_Number.setText(QtWidgets.QApplication.translate("Form", "Tracking Number: ", None, -1))
         self.Info.setText(QtWidgets.QApplication.translate("Form", "Information", None, -1))
-        self.confirm.setText(QtWidgets.QApplication.translate("Form", "CONFIRM", None, -1))
         self.rname.setText(QtWidgets.QApplication.translate("Form", "Receiver\'s name:", None, -1))
         self.sname.setText(QtWidgets.QApplication.translate("Form", "Sender\'s name: ", None, -1))
         self.senderAdd.setText(QtWidgets.QApplication.translate("Form", "Sender\'s address:", None, -1))
         self.raddr.setText(QtWidgets.QApplication.translate("Form", "Receiver\'s address:", None, -1))
-        self.shipmenttype.setText(QtWidgets.QApplication.translate("Form", "Shipment type:", None, -1))
         self.showtrackingnumber.setText(QtWidgets.QApplication.translate("Form", "                showtrackingnumber", None, -1))
         self.showsname.setText(QtWidgets.QApplication.translate("Form", "Sender\'s name ", None, -1))
         self.showsAdd.setText(QtWidgets.QApplication.translate("Form", "Sender\'s address", None, -1))
@@ -227,15 +225,15 @@ class Ui_Form(object):
         self.showsendercon.setText(QtWidgets.QApplication.translate("Form", "Sender\'s contact number", None, -1))
         self.showrcon.setText(QtWidgets.QApplication.translate("Form", "Sender\'s contact number", None, -1))
         self.rcon.setText(QtWidgets.QApplication.translate("Form", "Receiver\'s contact number: ", None, -1))
-        self.showshipmenttype_2.setText(QtWidgets.QApplication.translate("Form", "Shipment type", None, -1))
-        self.confirm_2.setText(QtWidgets.QApplication.translate("Form", "BACK", None, -1))
+        self.back.setText(QtWidgets.QApplication.translate("Form", "BACK", None, -1))
+        self.confirm.setText(QtWidgets.QApplication.translate("Form", "Confirm", None, -1))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Form = QtWidgets.QWidget()
-    ui = Ui_Form()
+    ui = Ui_Form_Confirm()
     ui.setupUi(Form)
     Form.show()
     sys.exit(app.exec_())
