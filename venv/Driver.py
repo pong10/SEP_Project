@@ -57,6 +57,5 @@ class Driver(Employee):
             Parcel.mycursor.execute("UPDATE Parcel SET State = '"+ state +"'where TrackingNumber = '"+str(i)+"';" )
             Parcel.mydb.commit()
 
-t=Driver('Somphon','Rueangsri','082454565','manza1921@hotmail.com','Chiang_Mai','Chiang_Rai')
-print(t.ReachDestination())
+
 
