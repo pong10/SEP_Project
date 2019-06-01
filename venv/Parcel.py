@@ -32,8 +32,3 @@ class Parcel():
                 break
             else:
                 print(self.state_of_parcel[i])
-<<<<<<< HEAD
-=======
-t=Parcel("123456",'Somphon')
-t.getParcelBygroup()
->>>>>>> 275c732d2b32b78d38d75f99986c044bf7b2f1bd
