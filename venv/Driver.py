@@ -44,7 +44,9 @@ class Driver(Employee):
     def Isfree(self):
         Parcel.mycursor.execute("select Service from Driver where username= '"+self.username+"';")
         t=Parcel.mycursor.fetchall()
-        return t[0][0]
+        if( t[0][0]=='Not Available'):
+            return False
+        return True
 
     def collected(self):
         state=self.state_of_parcel[1]
@@ -58,14 +60,11 @@ class Driver(Employee):
     def ReachDestination(self):
         state=self.state_of_parcel[2]
         Reach_trackingNumber=self.getAllParcelByProvinceFinal(self.Destination)
+        Parcel.mycursor.execute("UPDATE Driver SET Service = 'Available'where username = '" + self.username + "';")
+        Parcel.mydb.commit()
         for i in Reach_trackingNumber:
-            print(i)
             Parcel.mycursor.execute("UPDATE Parcel SET State = '"+ state +"'where TrackingNumber = '"+str(i)+"';" )
             Parcel.mydb.commit()
-'''
-t=Driver('ghm','ghn','Dr_wertyu')
-t.collected()
-t.Isfree()
-'''
+
 
 
