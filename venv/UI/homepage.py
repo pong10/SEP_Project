@@ -13,7 +13,7 @@ from PySide2 import QtCore, QtGui, QtWidgets
 from PySide2.QtWidgets import QApplication, QMessageBox
 from SignUp_user import Ui_Form2
 from SignIn import *
-from signUp import SignUp
+from SignUp import SignUp
 from AdminSignIn import Ui_Form_admin1
 from AdminSignIn_2 import Ui_Form_admin2
 from admin_enter_tracking import Ui_Form_tracking_admin
@@ -127,7 +127,6 @@ class Ui_Form1(object):
         self.form.hide()
         self.window.show()
         self.ui.user = self.AdminName
-        print(self.AdminName)
         self.ui.table()
         self.ui.back_button.clicked.connect(self.callUserPage)
         
@@ -200,19 +199,32 @@ class Ui_Form1(object):
     def showTrackInfo(self):
         trackno = self.ui.TrackingNo_lineEdit.text()
         a = Tracking(trackno)
-        a.track()
-        self.window = QtWidgets.QWidget()
-        self.ui = Ui_Form_showTrackingInfo()
-        self.ui.setupUi(self.window)
-        self.form.hide()
-        self.window.show()
+        Check=a.track()
+        if(Check == True):
+            self.window = QtWidgets.QWidget()
+            self.ui = Ui_Form_showTrackingInfo()
+            self.ui.setupUi(self.window)
+            self.form.hide()
+            self.window.show()
+            self.ui.showtrackingnumber.setText(a.getTrackingNumber())
+            self.ui.show_sender.setText(a.getSender())
+            self.ui.show_receiveraddress.setText(a.getReceiver_address()+" "+a.getReceiver_province()+" "+a.getReceiver_postcode())
+            self.ui.progressBar.setValue(a.trackPercent(a.getState()))
+            self.ui.commandLinkButton.clicked.connect(self.selectpage2)
+        else:
+            self.msg = QtWidgets.QMessageBox()
+            self.msg.setIcon(QMessageBox.Warning)
+            self.msg.setWindowTitle("Error")
+            self.msg.setText("Invalid Tracking no. Please re-enter it again.")
+            self.msg.setStandardButtons(QMessageBox.Ok)
+            self.msg.show()
+            if self.AdminName[0:3] == "Ad_":
+                self.selectpage2()
+            elif self.AdminName == "pnmoiannnygcoeu362":
+                self.selectpage2()
+            else:
+                self.callUserPage()
 
-        self.ui.showtrackingnumber.setText(a.getTrackingNumber())
-        self.ui.show_sender.setText(a.getSender())
-        self.ui.show_receiveraddress.setText(a.getReceiver_address()+" "+a.getReceiver_province()+" "+a.getReceiver_postcode())
-        self.ui.progressBar.setValue(a.trackPercent(a.getState()))
-        
-        self.ui.commandLinkButton.clicked.connect(self.selectpage2)
     def selectpage2(self):
         if self.AdminName[0:3] == "Ad_":
             self.callAdminTrackingPage()
@@ -273,9 +285,6 @@ class Ui_Form1(object):
         province = self.ui.province.text()
         phoneNo = self.ui.phoneNo.text()
         email = self.ui.email.text()
-        print(email)
-        print("PhoneNO")
-        print(phoneNo)
         if len(username) > 15 or len(username) < 6 or len(password) > 15 or len(password) < 6 or username[0:3] == "Ad_" or username[0:3] == "Dr_":
             self.msg = QtWidgets.QMessageBox()
             self.msg.setIcon(QMessageBox.Warning)

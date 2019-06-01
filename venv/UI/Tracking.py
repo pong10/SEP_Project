@@ -68,6 +68,8 @@ class Tracking():
             if self.TrackingNumber==i:
                 self.mycursor.execute("select * from Parcel where TrackingNumber ='"+str(i)+"'")
                 self.information =self.mycursor.fetchall()
+                return True
+        return False
 
 
 

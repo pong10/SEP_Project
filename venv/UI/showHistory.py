@@ -26,8 +26,6 @@ class showHistory():
         myresult=self.mycursor.fetchall()
         DataUser=[x[0] for x in myresult]
         for i in DataUser:
-            print(i)
-            print(self.username)
             if i==self.username:
 
                 lst.append(i)
