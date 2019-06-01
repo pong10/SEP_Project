@@ -9,9 +9,12 @@ class showHistory():
     )
 
     mycursor = mydb.cursor()
-    def __init__(self,sender):
-        self.username=sender
+    def __init__(self,u):
+        command="select Name from Users where username='" + u +"';"
+        self.mycursor.execute(command)
+        self.username=self.mycursor.fetchall()
         self.history=[]
+
 
 
     def GetDetail(self):
@@ -28,11 +31,10 @@ class showHistory():
 
         for i in lst:
 
-            command="select TrackingNumber,Sender,Sender_province,Receiver,Receiver_province from Parcel where Sender ='" + i +"'";
+            command="select TrackingNumber,Sender,Sender_province,Receiver,Receiver_province from Parcel where Sender ='" + i +"';"
             self.mycursor.execute(command)
             results = self.mycursor.fetchall()
             for i in results:
-                lst_get.append(i)
                 lst_get.append(i)
         for i in range(0, len(lst_get)):
             self.history.append([])
@@ -43,11 +45,12 @@ class showHistory():
             self.history[c].append(lst_get[i][4])
             c = c + 1
         return self.history
+
     def getTrackingNumber(self):
         for i in range(0,len(self.history)):
             return self.history[i][0]
 
-t=showHistory('Arun123456')
+
 
 
 
