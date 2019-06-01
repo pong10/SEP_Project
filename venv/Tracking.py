@@ -22,7 +22,8 @@ class Tracking():
         i=20
         for i in range(0,5):
             if(self.state_of_parcel[i]==state):
-                return i+20
+                i=i+20
+                return i
 
     def getTrackingNumber(self):
         return self.information[0][0]
