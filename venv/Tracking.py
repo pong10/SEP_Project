@@ -13,17 +13,17 @@ class Tracking():
     user = ''
     password = ''
 
-    def __init__(self,TrackingNumber,Sender):
+    def __init__(self,TrackingNumber,Sender=" "):
         self.TrackingNumber=TrackingNumber
         self.information=''
         self.UserID=Sender
 
     def trackPercent(self,state):
-        i=20
+        sum=0
         for i in range(0,5):
+            sum  =sum + 20
             if(self.state_of_parcel[i]==state):
-                i=i+20
-                return i
+                return sum
 
     def getTrackingNumber(self):
         return self.information[0][0]
@@ -65,10 +65,13 @@ class Tracking():
         self.mycursor.execute("select TrackingNumber,Sender from Parcel")
         myresult=self.mycursor.fetchall()
         for i,j in myresult:
-            if self.TrackingNumber==i and self.UserID==j:
+            if self.TrackingNumber==i:
                 self.mycursor.execute("select * from Parcel where TrackingNumber ='"+str(i)+"'")
                 self.information =self.mycursor.fetchall()
 
+t=Tracking('PAE25BDAD63TH')
+t.track()
+print(t.trackPercent(t.getState()))
 
 
 
