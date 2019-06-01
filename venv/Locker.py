@@ -16,6 +16,8 @@ class Locker():
         TrackingNumber_Username=self.mycursor.fetchall()
         for i,j in TrackingNumber_Username:
             if(self.trackingNumber==i and self.Name==j):
+                self.mycursor.execute("UPDATE Parcel SET State = 'Parcel receive' where TrackingNumber = '" + str(i) + "';")
+                self.mydb.commit()
                 return True
         return False
 t=Locker('PAE25BDAD63TH','Arun123456')
