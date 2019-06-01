@@ -16,8 +16,6 @@ class showHistory():
         self.username=try_username[0][0]
         self.history=[]
 
-
-
     def GetDetail(self):
         lst=[]
         lst_get=[]
@@ -26,14 +24,11 @@ class showHistory():
         myresult=self.mycursor.fetchall()
         DataUser=[x[0] for x in myresult]
         for i in DataUser:
-            print(i)
-            print(self.username)
             if i==self.username:
 
                 lst.append(i)
 
         for i in lst:
-
             command="select TrackingNumber,Sender,Sender_province,Receiver,Receiver_province from Parcel where Sender ='" + i +"';"
             self.mycursor.execute(command)
             results = self.mycursor.fetchall()
