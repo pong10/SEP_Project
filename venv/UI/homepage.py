@@ -28,6 +28,7 @@ import CreateTracking as ct
 from Tracking import Tracking
 from showTrackingInfo import Ui_Form_showTrackingInfo
 from showHistory import *
+from Customer import *
 from tracking_history import Ui_Form_Tracking_history
 from driver_task import Ui_Form_Driver
 from Parcel import *

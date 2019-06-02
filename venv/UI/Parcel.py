@@ -13,7 +13,6 @@ class Parcel():
     def __init__(self,Tracking_number=' ',name=' '):
         self.TrackingNo=Tracking_number
         self.Name=name
-        self.current_state=''
 
     def setstate(self, state):
         self.current_state=state
@@ -25,10 +24,4 @@ class Parcel():
         self.mycursor.execute("select Sender_province,Receiver_province,count(*) from Parcel where State='Parcel is in the source branch' group by Sender_province,Receiver_province")
         parcel=self.mycursor.fetchall()
         return parcel
-#select * from Parcel")
-    def printstate(self):
-        for i in range(0,4):
-            if(self.current_state==self.state_of_parcel[i]):
-                break
-            else:
-                print(self.state_of_parcel[i])
+

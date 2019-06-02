@@ -1,6 +1,6 @@
-from Employee import *
+from Person import *
 from Parcel import Parcel
-class Driver(Employee):
+class Driver(Person):
 
 
     state_of_parcel = ['Parcel is in the source branch', 'Parcel Express driver prepare to deliver',
@@ -58,7 +58,7 @@ class Driver(Employee):
             Parcel.mydb.commit()
 
     def ReachDestination(self):
-        state=self.state_of_parcel[2]
+        state=self.state_of_parcel[3]
         Reach_trackingNumber=self.getAllParcelByProvinceFinal(self.Destination)
         Parcel.mycursor.execute("UPDATE Driver SET Service = 'Available'where username = '" + self.username + "';")
         Parcel.mydb.commit()

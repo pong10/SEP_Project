@@ -1,5 +1,6 @@
 import mysql.connector
-class showHistory():
+from Person import *
+class Customer(Person):
     mydb = mysql.connector.connect(
         host="35.198.233.244",
         user="root",
@@ -7,16 +8,16 @@ class showHistory():
         database="parcelexpress",
         port="3306"
     )
-
-    mycursor = mydb.cursor()
-    def __init__(self,u):
-        command="select Name from Users where username='" + u +"';"
+    mycursor=mydb.cursor()
+    def __init__(self,user,name=' ', phone=' ', email=' ', province=' '):
+        super().__init__(name,phone,email,province)
+        command="select Name from Users where username='" + user +"';"
         self.mycursor.execute(command)
         try_username=self.mycursor.fetchall()
         self.username=try_username[0][0]
         self.history=[]
 
-    def GetDetail(self):
+    def GetHistory(self):
         lst=[]
         lst_get=[]
         c=0
@@ -41,16 +42,5 @@ class showHistory():
             self.history[c].append(lst_get[i][4])
             c = c + 1
         return self.history
-
-    def getTrackingNumber(self):
-        for i in range(0,len(self.history)):
-            return self.history[i][0]
-
-
-
-
-
-
-
 
 

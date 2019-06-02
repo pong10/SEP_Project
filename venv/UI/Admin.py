@@ -1,7 +1,7 @@
-from Employee import *
+from Person import *
 import mysql.connector
 import uuid
-class Admin(Employee):
+class Admin(Person):
 #class Admin(Employee):
     mydb = mysql.connector.connect(
         host="35.198.233.244",

@@ -9,7 +9,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide2 import QtCore, QtGui, QtWidgets
-from showHistory import *
+from Customer import *
 
 class Ui_Form_Tracking_history(object):
     def setupUi(self, Form):
@@ -101,8 +101,8 @@ class Ui_Form_Tracking_history(object):
         self.tableWidget.horizontalHeaderItem(4).setText(QtWidgets.QApplication.translate("Form", "Destination", None, -1))
         self.back_button.setText(QtWidgets.QApplication.translate("Form", "Back", None, -1))
     def table(self):
-        run = showHistory(self.user)
-        result = run.GetDetail()
+        run = Customer(self.user)
+        result = run.GetHistory()
         for row_number,row_data in enumerate(result):
             self.tableWidget.insertRow(row_number)
             for colum_number,data in enumerate(row_data):
